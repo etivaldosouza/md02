@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:nth-child(even) {
+            background-color: red;
+        }
+        li:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        p:not(.fim) {
+            background-color: aqua;
+        }
+        input:checked + p {
+            background-color: red;
+        }
+        input:not(:checked + p) {
+            background-color: yellow;
+          
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+
+    <p class="ini">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa facere nihil alias praesentium enim officiis ipsam vitae, commodi similique iusto unde error sapiente exercitationem optio aspernatur beatae quae. Explicabo?</p>
+    <p class="fim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iusto aspernatur ab nobis autem laudantium quisquam minus praesentium maxime consequatur, cum voluptatem, recusandae at temporibus, dicta odio facilis nemo repellat.</p>
+
+    <label for="form">sim</label>
+    <input type="checkbox" checked name="form" id="form">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quia quos facere dicta omnis? At, distinctio cumque. Natus provident, quidem qui facere et mollitia error ut temporibus asperiores. Quaerat, inventore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae neque delectus, veritatis mollitia aliquid sequi magni soluta dolores? Laudantium esse ullam quod assumenda repellendus illum tempore voluptatibus dolorum, rem earum!</p>
+</body>
+</html>

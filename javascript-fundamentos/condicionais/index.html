@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+    <style>
+        h1{
+            color: rgba(137, 43, 226, 0.774);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>if</h1>
+    <p>caso a condição seja verdadeira o código será executado sendo falso ñ será executado</p>
+    <h2>Condição Simples</h2>
+    <p>quando se tem apenas o if</p>
+    <h2>Condição Composta</h2>
+    <p>utiliza o if/else</p>
+    <script>
+
+        /* 
+
+        condição simples
+        ---------------- 
+        é uma interrupção no fluxo do programa ou seja ele interrompe o fluxo sequencial
+        para fazer um teste lógico que
+        caso  esse teste lógico seja verdadeiro o código será executado.
+
+        */
+
+        if(true) {
+            console.log('hello world')
+        }
+        if(false) { //
+            console.log('não vai ser')
+        }
+        if(!false){ //negação de falso é verdadeiro 
+            console.log('vai ser')
+        }
+
+        if(3 > 4){ //condição falsa
+            console.log('3 > 4')
+        }
+
+        if(3 < 4){ // condição verdadeira
+            console.log('3 < 4')
+        }
+
+        if(3<=4){
+            console.log('3 <= 4')
+        }
+
+        var textVazio = '' //false
+        if(textVazio){ //condição falsa, o cod.ñ será executado
+            console.log('textoVazio')
+        }
+
+        var textVazio = '' //false
+        if(!textVazio){ //negação falsa é verdadeiro então o cod. será executado
+            console.log('textoVazio')
+        }
+
+        /*
+
+        condição composta
+        -----------------
+        (caso a 1ª condição seja falsa a segunda será executada)
+        */
+            
+        var textVazio = '' //str vazia é false
+        if(textVazio){  // como é um condição falsa ñ sera impresso o oi.
+            console.log('oi')
+        }else{
+            console.log('olá')
+        }
+
+        /* 
+        
+            else if (Quando quero testar várias expressões)
+        
+        */
+
+        if(10 > 20){
+            console.log('10 > 20 ')
+        }else if(10 <= 12) {
+            console.log('10 <= 12')
+        }else{
+            console.log('olá')
+        }    
+
+        /* 
+            OPERADOR TERNÁRIO 
+            -----------------
+         forma curta de representar if else
+
+        */
+
+        console.log(true ? 'programador' : 'Designer') //se a condição for verdadeira executa a primeira opção se for falsa executa a segunda opção.
+        console.log(false ? 'progrmador' : 'Designer')
+
+        var idade = 26
+        console.log(idade >= 18 ? 'maior de idade' : 'menor de idade')
+        
+        
+        /* CONDIÇÕES MULTIPLAS
+            condições usadas para valores fixos,pontuais
+            ñ serve p/ casos que envolve intervalo.
+            tem uma expressão e dessa expressão testa varios valores
+             swith case
+        */
+
+        var cor = 'branco'
+        switch(cor){
+            case 'azul':
+                console.log('cor azul')
+                break
+            case 'amarelo':
+                console.log('preto')
+                break
+            case 'vermelho':
+                console.log('cor vermelho')
+                break
+            default: // caso nenhuma dos casos acima sejam satisfeito
+                console.log('cor inválida')
+                break // ñ é obrigado usar 
+        } 
+
+
+    </script>
+</body>
+</html>

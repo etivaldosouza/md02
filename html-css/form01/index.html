@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="formularios em html 5">
+    <title>Formulario</title>
+   
+</head>
+<body>  
+    <form action="" method="get">
+
+        <h2>input radio</h2>
+        <fieldset>
+            <legend>Gênero</legend>
+            
+            <input type="radio" name="genero" id="masc" checked>
+            <label for="masc">Masculino</label><br>
+           
+            <input type="radio" name="genero" 
+            id="feminino" >
+            <label for="feminino">Feminino</label><br>
+
+            <input type="radio" name="genero" id="outro" >
+            <label for="outro">Outro</label>
+        </fieldset>
+
+        <h2>input data</h2>
+        <label for="data">Escolha a Data</label>
+        <input type="date" name="data" id="data" value="2025-02-24" min="2025-02-24" max="2025-12-31">
+
+        <h2>input datetime</h2>
+
+        <label for="data">Data:</label>
+        <input type="datetime-local" name="data" id="data" value="2025-02-24T08:00">
+
+        <h2>input hora</h2>
+
+        <label for="hora">Hora</label>
+        <input type="time" name="Hora" id="hora" value="09:00">
+        
+        <h2>input cor</h2>
+
+        <label for="cor">Cor</label>
+        <input type="color" name="cor" id="cor" value="#FF0000"><br><br>
+
+        <label for="email">e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="ex:.email@email.com" style="text-align: center;"><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        
+        <h3>input file</h3>
+
+        <label for="arq">Arquivo</label>
+        <input type="file" name="arq" id="arq" accept="image/*" multiple><br><br>
+
+        <h2>select</h2>
+        <label for="linguagens">linguagens</label>
+        <select name="linguagens" id="linguagens">
+            <optgroup label="trilha 01">
+                <option value="python">PYTHON</option>
+                <option value="javaScript">JAVASCRIPT</option>
+                <option value="Java">JAVA</option>
+            </optgroup>
+
+            <optgroup label="trilha 02">
+                <option value="html">HTML5 e CSS3</option>
+                <option value="git">GIT</option>
+                <option value="github">GITHUB</option>
+            </optgroup>
+        </select><br><br>
+
+       <h2>datalist</h2>
+
+       <label for="dia">Escolha o Dia</label>
+       <input list="dias" id="dia">
+
+       <datalist id="dias">
+            <option value="Domingo">
+            <option value="Segunda">
+            <option value="Terça">
+            <option value="Quarta">
+            <option value="Quinta">
+            <option value="Sexta">
+            <option value="Sabado">
+       </datalist><br><br>
+
+       <label for="text">Comentario</label>
+       <textarea name="text" id="text"></textarea>
+</form><br><br>
+
+<a href="https://www.google.com/" target="_blank"><img src="imagem/code.png" alt="print do codigo" width="500px" height="500px"></a>
+
+<audio src=""></audio>
+</body>
+</html>

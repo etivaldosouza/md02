@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos JavaScipt</title>
+</head>
+<body>
+   
+   <script>
+        var nome = 'Etivaldo Souza'
+        console.log(nome)
+
+        console.log(nome.length)//quantidade de caracteres
+
+        console.log(nome.toLocaleUpperCase())//tudo para maiúsculo
+
+        console.log(nome.toLocaleLowerCase())//tudo para minúsculo
+
+        console.log(nome.indexOf('al')) //procura trecho de texto dentro de um texto e retorna a sua posição. quando ñ acha retorna -1
+
+        console.log(nome.replace('Souza','coelho')) // troca um termo por outro
+
+        var canalYoutube = '         Programador Abordo       '
+        console.log(canalYoutube)
+        console.log(canalYoutube.trim()) //Retira os espaços antes e depois do termo
+        
+        /*
+
+        operadores matemáticos
+
+        */
+
+        console.log(10+5*3)
+        console.log(25-20)
+        console.log(5*2)
+        console.log(100/2)
+        console.log(4**2)
+        var a = 10
+        var b = 8
+        console.log(a+b)
+        console.log(10 % 2 ) // resto da divisão de 10 por 2
+        console.log(10 % 4 )
+        console.log(10 % 3 )
+        
+        //incremento
+        var a = 4 
+        console.log(++a)//já printa o valor incrementado
+        
+        console.log(a++) //primeiro printa o valor anterior na tela e depois faz o incremento
+        console.log(a)
+
+        //operadores lógicos e Relacionais)
+        var a = true
+        console.log(a)
+        var b = false
+        console.log(b)
+
+        console.log('3 < 5',3 < 5 )
+        console.log(10 != 10)
+        var nome1 = 'etivaldo'
+        var nome2 = 'souza'
+        console.log('nome1 == nome2',nome1 == nome2)
+        console.log('nome1 != nome 2',nome1 != nome2)
+        
+        console.log('4' === 4) // analisa tipo e valor (o 1º 4 é str e o outro é do tipo int)
+        console.log('4' === '4') // os dois tem o mesmo valor e são str
+        console.log('4' == 4) //analisa apenas o valor
+
+        // operadores lógico ( true,false, negaçao(!))
+
+       var a = true
+       var b = false
+       console.log(a)
+       console.log(b)
+       
+       //negacao(!)
+
+       console.log(!a)
+       console.log(!b)
+       console.log(!!a) //negar duas vezes
+       console.log(!!b)
+
+       /*
+
+       valores que por padrão são considerados false:
+       ----------------------------------------------
+         null , underfined, ' '(string vazia), false, 0.
+
+       */
+
+       console.log(false)
+       console.log(!false)
+       console.log(!!false)
+       console.log(!0)
+       console.log(!!0)
+       console.log(!null)
+       console.log(!!null)
+       console.log(!undefined)
+       console.log(!' ')
+
+    //para qualquer outros tipos em js os valores serão verdadeiros
+
+     console.log(!20)
+     console.log(!!20)
+
+     
+
+       /*
+       
+       OPERADOR &&: (operador de disjunção)
+      ---------------- 
+      
+      - (so é verdadeiro se todos forem verdadeiros e o resultado retorna o último que for verdadeiro
+      
+      - sendo um dos elementos falso o resultado retorna o 1ºvalor falso e para.
+
+      */
+      
+     console.log('10' && 'texto' && 'programador') //(V,V,V = V) retornará programador
+     console.log(null && 'programador a bordo') //(F,V = F) retornará null
+     console.log(false && 'texto' && '10') // (F,V,V = F)
+     console.log('passa' && 0 && 'dev')
+     console.log('passou' && 0)
+     console.log('passou' &&  null && 0)//(V,F,F = F)
+     console.log('false' && 100 && '' && 'teste' && null) //(V,V = V) (V,F = F) // resultado é uma string vazia
+     console.log(10 > 5 && 7 < 10) //( V,V = V)
+     console.log(10 > 5 && 10 > 11) //(V,F = F)
+      
+     /*
+
+      OPERADOR || (ou)
+      -----------------
+      - so é falso se todos forem falsos e retorna a ultima que é falsa
+
+      - se um deles forem verdadeiro o resultado retorno o 1º que for verdadeiro e para.
+      */
+      console.log(null || 'programador a bordo')
+      console.log(null || 'programador a bordo'|| 26)
+      console.log(null || '' || 26) //(F,V,F= V)
+      console.log('programador a bordo' || 'teste') 
+      console.log(10 > 5 || 10 < 11)
+      console.log(10 > 30 || 10 > 11)
+      console.log(null || false || 0)
+      
+      console.log('programador' && 2050 || ' ' && 26) 
+      // ( SE TIVER UM && OU UMA SEQUENCIA DE && E DEPOIS DELE TIVER UM || SENDO O && COMPROVADO COMO VERDADEIRO COMO NO CASO A CIMA Ñ PRECISA PROSSEGUIR COM A ANALISE DO || OQ ACONTECE NO EXEMPLO: V,V = retorna o ultimo verdadeiro(2050) e encerra o programa )
+
+      console.log('programador' && 2050 && 'a bordo' || 0) // V,V = RETORNA O ULTIMO( 2050) 2050 && 'a bordo' => V,V = retorna o ultimo Verdadeito('a bordo' )
+      // obs: o && prevalece sobre o ||
+      
+      console.log(null || !'' && 'programador')
+ 
+   </script>
+</body>
+</html>

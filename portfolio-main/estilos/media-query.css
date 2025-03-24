@@ -1,0 +1,128 @@
+@charset "UTF-8;"
+
+/* Typical Device Breakpoints
+
+Telas Pequenas: até 600px;
+celular: de 600px ate 768px;
+Tablet: de 768px até 992px;
+desktop: 992px até 1200px;
+grandes telas: acima de 1200px;
+
+*/
+
+@media screen and (max-width: 1024px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .conteudo {
+        width: 90%;
+        gap: 50px;
+    }
+    
+    .conteudo-principal {
+        width: 100%;
+    }
+    
+    .conteudo-secundario {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .card-pai {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cards {
+        width: 90%;
+        height: auto;
+    }
+    
+    .projeto {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-projeto {
+        width: 90%;
+        height: auto;
+    }
+    
+    .rodape {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .rodape-itens {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        gap: 20px;
+    }
+}
+
+/* Para celulares (largura máxima de 768px) */
+@media screen and (max-width: 768px) {
+    .conteudo {
+        width: 95%;
+        gap: 30px;
+    }
+    
+    .conteudo-principal-titulo {
+        font-size: 28px;
+    }
+    
+    .conteudo-principal-paragrafo,
+    .conteudo-secundario-paragrafo {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .conteudo-secundario {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .cards {
+        width: 100%;
+        height: auto;
+    }
+    
+    .skill-img {
+        justify-content: center;
+    }
+    
+    .projeto {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-projeto-pai {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card-projeto {
+        width: 100%;
+        height: auto;
+    }
+    
+    .rodape {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+
+        background-size: 60px;
+    }
+}
