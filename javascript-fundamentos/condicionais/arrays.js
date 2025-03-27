@@ -102,7 +102,7 @@ var idade = usuario[1]
 var ano = usuario[3]
 console.log(nome,idade,ano)
 
-// forma atualizada com o emcascript 6 usando o Destructin:
+// forma atualizada com o ecascript 6 usando o Destructin:
 
 var usuario = ['ayrton',26,'programador abordo',2019,'Brasileiro']
 
