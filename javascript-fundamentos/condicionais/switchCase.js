@@ -29,9 +29,8 @@ switch(diaSem){
 }   
 
 
-
-var cor = 'branco'
-switch(cor){
+var cor = 'branco' //* posso ñ criar a var ja dentro do parametro do switch
+switch(cor){ //* posso ja testar criando a variavel dentro do parametro( ex: switch('amarelo'))
     case 'azul':
         console.log('azul')
         break

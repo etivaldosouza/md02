@@ -101,7 +101,7 @@
         console.log(true ? 'programador' : 'Designer') //se a condição for verdadeira executa a primeira opção se for falsa executa a segunda opção.
         console.log(false ? 'progrmador' : 'Designer')
 
-        var idade = 26
+        var idade = 16
         console.log(idade >= 18 ? 'maior de idade' : 'menor de idade')
         
         
@@ -118,7 +118,7 @@
                 console.log('cor azul')
                 break
             case 'amarelo':
-                console.log('preto')
+                console.log('amarelo')
                 break
             case 'vermelho':
                 console.log('cor vermelho')
@@ -128,6 +128,52 @@
                 break // ñ é obrigado usar 
         } 
 
+        /* 
+        em JS:
+------------------------
+
+        0 - DOMINGO
+        1 - SEGUNDA
+        2 - TERÇA
+        3 - QUARTA 
+        4 - QUINTA
+        5 - SEXTA
+        6 - SABADO
+
+    */
+        
+
+        var agora = new Date()
+        var pratoDia = agora.getDay()
+        
+
+        switch(pratoDia){
+
+            case 0:
+                console.log('Galeto')
+                break
+            case 1:
+                console.log('Feijoada')
+                break
+            case 2:
+                console.log('Rabada')
+                break
+            case 3:
+                console.log('Peixe')
+                break
+            case 4:
+                console.log('dobradinha')
+                break
+            case 5:
+                console.log('Mocotó')
+                break
+            case 6:
+                console.log('macarronada')
+            
+            default:
+                console.log('opçao invalida')
+                break
+        }
 
     </script>
 </body>

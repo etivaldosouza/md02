@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while loop</title>
+</head>
+<body>
+
+    <script>
+        var contador = 0
+        while(contador < 15){
+            console.log(contador)
+            contador = contador + 1           
+        }
+
+        var contador = 0
+        while(contador < 5){
+            if(contador == 3){
+                break
+            }
+            console.log(contador)
+            contador++
+        }
+
+        var contador = 0
+         while(contador < 100){
+            if(contador % 3 == 0){
+                console.log(contador,'ping')
+            }else if(contador % 5 == 0){
+                connsole.log(contador,'pong')
+            }else if(contador % 3 == 0 && contador % 5 == 0){
+                console.log(contador,'ping-pong')
+            }
+            
+         }
+    </script>
+    
+</body>
+</html>
