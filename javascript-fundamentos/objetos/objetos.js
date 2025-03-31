@@ -129,3 +129,30 @@ usuario5 = {
 }
 
 console.log('usuario5', usuario5)
+
+
+// getters e setters
+
+var usuarios = [
+    {
+        nome: 'Ayrton',
+        idade: '26'
+    },
+
+    {
+        nome:'João',
+        idade: '19'
+    },
+    {
+        nome:'Maria',
+        idade: '21'
+    }
+]
+
+console.log(usuarios)
+console.log(usuarios[1])
+console.log(usuarios[0])
+
+for(c = 0; c < usuarios.length; c++){
+    console.log(`na posição ${c} está o objeto`,usuarios[c])
+}
