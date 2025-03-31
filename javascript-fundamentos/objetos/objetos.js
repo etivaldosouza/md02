@@ -69,5 +69,63 @@ var extraInfo = {
     estado: 'Rio de Janeiro'
 }
 
-var novoUsuario = Object.assign({},usuario4,extraInfo)
+var novoUsuario = Object.assign({},usuario4,extraInfo) // está colocando os dois objetos dentro de um objeto novo dentro das {} (forma mais indicada)
 console.log(novoUsuario)
+
+/*
+  usando o usuario4 como objeto alvo, ou seja, é como se o objeto extraInfo fosse colocado dentro do usuario4
+*/
+
+var usuario4 = {
+    nome:'Ayrton',
+    idade: '26'
+}
+
+var extraInfo = {
+    pais: 'Brasil',
+    estado: 'Rio de Janeiro'
+}
+
+Object.assign(usuario4,extraInfo )  // em vez de gerar um objeto novo aqui é como se eu estivesse colocando o objeto extraInfo dentro de usuario4
+console.log('usuario4',usuario4)
+
+//
+
+var usuario4 = {
+    nome:'Ayrton',
+    idade: '26'
+}
+
+var extraInfo = {
+    pais: 'Brasil',
+    estado: 'Rio de Janeiro'
+}
+
+
+var usuario5 = {
+    usuario4,
+    extraInfo
+}
+
+console.log("usuario 5", usuario5)
+
+// utilizando o spred (como se estivesse usando o object.assign({},usuario4,extraInfo))
+
+var usuario4 = {
+    nome:'Ayrton',
+    idade: '26'
+}
+
+var extraInfo = {
+    pais: 'Brasil',
+    estado: 'Rio de Janeiro'
+}
+
+usuario5 = {
+    ...usuario4,
+    ...extraInfo,
+    sexo: 'M',
+    profissao:'Programador'
+}
+
+console.log('usuario5', usuario5)
