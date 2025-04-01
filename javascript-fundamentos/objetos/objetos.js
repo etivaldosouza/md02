@@ -131,6 +131,9 @@ usuario5 = {
 console.log('usuario5', usuario5)
 
 
+
+
+
 // getters e setters
 
 var usuarios = [
@@ -153,6 +156,52 @@ console.log(usuarios)
 console.log(usuarios[1])
 console.log(usuarios[0])
 
-for(c = 0; c < usuarios.length; c++){
-    console.log(`na posição ${c} está o objeto`,usuarios[c])
-}
+
+
+// criando objeto que vai servir para navegar no array
+
+var usuarios = [
+    {
+        nome: 'Ayrton',
+        idade: '26'
+    },
+
+    {
+        nome:'João',
+        idade: '19'
+    },
+    {
+        nome:'Maria',
+        idade: '21'
+    }
+]
+
+var usuario = {
+    posicao: 0,
+    get atual(){ //get usada p/quando retorno valor
+        return usuarios[this.posicao]
+    },
+    set atual(posicao){  // quando to atribuindo valor
+        this.posicao = posicao
+    },
+    proximo(){
+        ++this.posicao
+    },
+    anterior() {
+        --this.posicao
+        },
+    }
+
+    console.log(usuario.atual)
+    usuario.proximo()
+    
+    console.log(usuario.atual)
+    usuario.proximo()
+
+    console.log(usuario.atual)
+
+    usuario.atual = 0
+    console.log(usuario.atual)
+    usuario.atual = 2
+    console.log(usuario.atual)
+
