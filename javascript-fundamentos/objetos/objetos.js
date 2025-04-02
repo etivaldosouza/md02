@@ -176,6 +176,7 @@ var usuarios = [
     }
 ]
 
+
 var usuario = {
     posicao: 0,
     get atual(){ //get usada p/quando retorno valor
