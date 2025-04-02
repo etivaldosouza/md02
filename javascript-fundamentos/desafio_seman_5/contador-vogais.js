@@ -4,9 +4,10 @@
 
 
 function contarVogais(v){
-    total = 0    
+    total = 0 
+    let vog = 'aeiou'   
     for(var vogais of v){
-        if(vogais.includes('aeiou') == true){
+        if(vogais.includes('vog') == true){
             total++
         }
     }
@@ -18,3 +19,28 @@ var resultado = contarVogais(palavra)
 console.log(resultado)
 
 
+//==================//==================
+
+
+function contarVogais(palavra){
+    var vogais = 'AEIOU'.toLocaleLowerCase()
+    var vogaisEncontradas = []
+    total = 0
+    
+    for(var letra of palavra){    
+        if(vogais.includes(letra) && !vogaisEncontradas.includes(letra)) {
+            total++
+            vogaisEncontradas.push(letra)
+            
+        }           
+    }
+    return `${total} (${vogaisEncontradas.join(', ')})`;
+    
+}
+
+// funcao para letra:
+
+
+
+var res = contarVogais('javascript')
+console.log(`a palavra contem ${res} vogais`)
