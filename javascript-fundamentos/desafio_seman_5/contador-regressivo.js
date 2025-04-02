@@ -19,3 +19,11 @@ while(c >= 0 ){
     c--
 }
 
+for(var c = 5; c >= 0; c--){
+    console.log(c,end='')
+}
+var num = [5,4,3,2,1,0]
+for(var c in num){
+    console.log(`${c} -> ${num[c]}`)
+}
+
