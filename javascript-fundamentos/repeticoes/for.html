@@ -33,6 +33,29 @@
             console.log(`posição ${c} - ${numerosAleatorios[c]}`)
         }
 
+        //continue: ( != do break o loop é interrompido)
+
+        for(var c = 0; c < 50 ; c++){
+            if(c % 2 != 0){ // numeros impares
+                continue // volta para o loop e ñ segue p/ linha de baixo(ñ vai imprimir os impares)
+            }
+            console.log(c)
+        }
+
+        // for of: * é uma forma reduzida do for comum. eu crio uma variavel(num) e essa variavel vai percorrer o array automaticamente e armazenar os valores da variavel numerosAleatorios na variavel criada num (explicação do exemplo abaixo)
+
+        var numerosAleatorios = [3,5,10,2,19,21,13]
+        for(var num of numerosAleatorios){ //*
+            console.log(num)
+        }
+
+        // for in: ele vai gerar os indices relacionados a variavel:
+            
+        var numerosAleatorios = [3,5,10,2,19,21,13]
+        for(var num in numerosAleatorios){
+            console.log(`o indice ${num} corresponde a ${numerosAleatorios[num]}`)
+        }
+
     </script>
 </body>
 </html>
