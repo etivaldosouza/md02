@@ -3,8 +3,6 @@
 // contaVogais("javascript") // Deve retornar 3 (a, i, a)
 
 
-
-
 function contarVogais(v){
     total = 0    
     for(var vogais of v){
