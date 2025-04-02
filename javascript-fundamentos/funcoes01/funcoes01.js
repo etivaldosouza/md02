@@ -14,7 +14,7 @@ escreva()
 
 function escrevaMensagem(mensagem){
     console.log(mensagem)
-    return msg
+    
 }
 
 escrevaMensagem('olá,Mundo!') // (olá mundo! é o parametro da função)
@@ -37,14 +37,17 @@ console.log(somar(6,4))
 
 // passando array como parametro da funcao
 
-function somarTudo(numeros){
+function somarTudo(numeros) {
+    
     var total = 0
-    for(var num of numeros){
-        total = total + num
-    }
-    return total
+
+    for(var num of numeros){       
+        total = total + num     
+    }  
+    return total    
 }
 
-var arrayNumeros = [3,5,7,10,9,12]
-var resultado = somarTudo(arrayNumeros)
+var ArrayNumeros = [3,5,7,10,9,12,5,10]
+var resultado = somarTudo(ArrayNumeros) // (ArrayNumeros) vai ser o parametro utilizado
 console.log(resultado)
+//na function acima
