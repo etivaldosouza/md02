@@ -39,7 +39,7 @@ console.log(somar(6,4))
 
 function somarTudo(numeros) {
     
-    var total = 0
+    var total = 0 // acumulador
 
     for(var num of numeros){       
         total = total + num     
