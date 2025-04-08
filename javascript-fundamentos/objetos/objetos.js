@@ -140,9 +140,22 @@ usuario5 = {
 
 console.log('usuario5', usuario5)
 
+//===============================================
+/*
+    sempre que eu quiser que o nome de uma propriedade seja o valor de uma variavel, eu coloco essa propriedade entre conchetes 
+*/
+
+var novo = 'Estado' //*
+
+var usuario = {
+    nome: 'Ayrton',
+    [novo] : 'rj' // o nome da propriedade será o valor da variavel novo
+}
+
+console.log(usuario)
 
 
-// getters e setters
+//========== getters e setters //=======================
 
 var usuarios = [
     {
