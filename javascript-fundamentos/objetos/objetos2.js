@@ -38,7 +38,7 @@ var { nome: { ultimo }}  = usuario2
 console.log(ultimo)
 
 //====================//=============================//=========
-//criando valores defal
+//criando valores defal: caso ñ haja uma determinada propriedade colocamos um valor padrão
 
 var usuario3 = {
     nome: {
