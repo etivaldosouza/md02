@@ -1,4 +1,4 @@
-// variaveis como função:
+//=================//variaveis como função://======================
 
 var subtraiDoisNumeros = function subtrai (a,b){
     return a-b
