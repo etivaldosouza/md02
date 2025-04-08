@@ -25,7 +25,8 @@ console.log(primeiroNome)
 var { youtube: canal } = usuario
 console.log(canal)
 
-//=========//===============//
+//=========//===============//=======================
+// pegando propriedades de obejeto dentro de outro objeto
 
 var usuario2 = {
     nome: {
@@ -35,6 +36,9 @@ var usuario2 = {
 }
 var { nome: { ultimo }}  = usuario2 
 console.log(ultimo)
+
+//====================//=============================//=========
+//criando valores defal
 
 var usuario3 = {
     nome: {
