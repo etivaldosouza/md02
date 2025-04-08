@@ -42,12 +42,12 @@ console.log(usuario)
 //=================// function como objeto //===========================
 
 var usuario2 = {
-    digaOi: function(name){
+    digaOi: function(name){ //quando eu passo uma função no meu objeto eu posso abstrair a palavra reservada function e os dois pontos ficando: digaOi(name)
         return `olá ${name}`
     }
 }
 console.log(usuario2)
-console.log(usuario2.digaOi('Ayrton'))
+console.log(usuario2.digaOi('Ayrton')) // invocando a fn da chave digaOi
 console.log(usuario2.digaOi('Etivaldo'))
 
 //passando variavel como valor de uma chave no objeto
@@ -139,8 +139,6 @@ usuario5 = {
 }
 
 console.log('usuario5', usuario5)
-
-
 
 
 
