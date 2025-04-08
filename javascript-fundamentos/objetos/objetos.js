@@ -14,9 +14,11 @@ console.log(usuario.idade)
 console.log(usuario.youtube)
 console.log(usuario['ultimo-nome']) // como a chave tem um caractere especial precisa estar entre aspas e dentro de colchetes.
 
-// adicionando novas propriedades ao objeto ja criado.
 
-usuario.ano = 2025
+// adicionando novas propriedades ao objeto ja criado.
+//----------------------------------------------------
+
+usuario.ano = 2025 // adicionando number
 console.log(usuario)
 console.log(usuario.ano)
 
@@ -27,17 +29,17 @@ console.log(usuario)
 
 // como chave valor de um objeto podemos passar uma function, um arrays, até outros obejetos ,etc.
 
-usuario.hobbies = ['musica','programar','viajar']
+usuario.hobbies = ['musica','programar','viajar'] //  array
 console.log(usuario)
 
-usuario.competencias = {
+usuario.competencias = {  // objeto
     linguagens:['JavaScript','Python','go','Scala','PHP'],
     instrumentosMusicais: ['Guitarra','Baixo','Bateria']
 
 }
 console.log(usuario)
 
-// function como objeto 
+//=================// function como objeto //===========================
 
 var usuario2 = {
     digaOi: function(name){
@@ -56,11 +58,16 @@ var idade = '25'
 usuario3 = {
     nome:'ayrton',
     cor: cor, // quando o nome da propriedade do objeto usuario3 é o mesmo da variavel, o valor da propriedade será o valor da variavel
-    idade // forma simplificada quando no nome é o mesmo
+    idade // forma simplificada quando no nome é o mesmo(ñ preciso colocar idade = idade)
 }
 console.log(usuario3)
 
-// transformando mais de um objetos em apenas um:
+//------------------------//--------------------
+
+/* 
+    transformando mais de um objetos em apenas um: 
+   ----------------------------------------------- 
+*/
 
 var usuario4 = {
     nome: 'Ayrton',

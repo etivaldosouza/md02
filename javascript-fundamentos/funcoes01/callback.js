@@ -1,4 +1,4 @@
-// função calback: são funções que são usadas como parametro de outra função.
+// função calback: são funções que são usadas como parametro de outra função e executadas dentro dela.usada para quando vc quer alterar o valor final.
 
 
 function somaTudo(a,b,fnCallback) {
@@ -48,7 +48,6 @@ console.log(subtrai(20,6,function(total){
 //=======//==========//=============
 
 
-
 function subtrai(a,b,fnCallback){
     return fnCallback(a-b)
 }
@@ -62,3 +61,12 @@ console.log(subtrai(20,6,multiplica))
 //==========//=============//=============
 
 
+function soma(a,b,fnCallback){
+    return fnCallback(a+b)
+}
+
+var divide = function(total){
+    return total / 2
+}
+
+console.log(soma(10,5, divide))
