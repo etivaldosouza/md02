@@ -156,6 +156,7 @@ console.log(usuario)
 
 
 //========== getters e setters //=======================
+//abaixo um array de objetos [{nome:x, idade: y},{nome:x, idade: y},{}]
 
 var usuarios = [
     {
@@ -175,7 +176,8 @@ var usuarios = [
 
 console.log(usuarios)
 console.log(usuarios[1])
-console.log(usuarios[0])
+console.log(usuarios[0].nome)
+console.log(usuarios[2].idade)
 
 
 
