@@ -1,15 +1,18 @@
-// "objetos é conjunto de variaveis dentro de uma variavel."
+// "objetos é um tipo de valor. um valor que permite armazenar uma coleção de pares de chaves e valor.ou seja,  é conjunto de variaveis dentro de uma variavel."
+// chave é a variavel e o valor é o valor da chave
 
 var usuario = {
     nome: 'ayrton',
     idade: '26',
-    youtube: 'Programador a bordo'      
+    youtube: 'Programador a bordo',   
+    'ultimo-nome': 'Souza'   // quando tem caractere especial na chave tem q ta entre ''
 }
 console.log(usuario) // imprime todo o objeto
 
 console.log(usuario.nome) // imprime apenas uma propriedade
 console.log(usuario.idade)
 console.log(usuario.youtube)
+console.log(usuario['ultimo-nome']) // como a chave tem um caractere especial precisa estar entre aspas e dentro de colchetes.
 
 // adicionando novas propriedades ao objeto ja criado.
 
