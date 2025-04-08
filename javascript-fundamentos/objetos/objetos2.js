@@ -10,7 +10,7 @@ var {nome,idade,pais} =  usuario // para puxar o valor das propriedades do objet
 console.log(nome,idade,pais)
 
 
-// extraindo o valor da propriedade do objeto e armazenando em variavel:
+// extraindo o valor da propriedade do objeto e armazenando em uma variavel:
 
 var usuario = {
     nome: 'Ayrton',
@@ -19,7 +19,7 @@ var usuario = {
     youtube: 'programador a bordo'
 }
 
-var { nome: primeiroNome } = usuario // pega o valor da variavel nome do objeto usuario e armazena na variavel q declarei como primeiroNome.
+var { nome: primeiroNome } = usuario // pega o valor da variavel nome do objeto usuario e armazena na variavel q declarei com nome de primeiroNome.
 console.log(primeiroNome)
 
 var { youtube: canal } = usuario
