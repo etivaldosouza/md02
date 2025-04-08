@@ -96,7 +96,7 @@ var extraInfo = {
     estado: 'Rio de Janeiro'
 }
 
-Object.assign(usuario4,extraInfo )  // em vez de gerar um objeto novo aqui é como se eu estivesse colocando o objeto extraInfo dentro de usuario4
+Object.assign(usuario4,extraInfo )  // em vez de gerar um objeto novo, aqui é como se eu estivesse colocando o objeto extraInfo dentro de usuario4
 console.log('usuario4',usuario4)
 
 //
