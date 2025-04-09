@@ -7,7 +7,7 @@ function Usuario() {
         return a+b
     }
 }
-//Usuario()
+   // Usuario()
 
  //console.log(new Usuario())  //quando uso o new p/ alterar o valor de this ele passa a valer um objeto da function
 
@@ -35,7 +35,7 @@ var meuObjeto = {
     nome: 'Etivaldo' // 2º
 }
 
-personagem.call(meuObjeto) //3º invocando a function com call passando um this para ela explicitamente.onde o primeiro parametro é o valor de this que a function vai usar. como quero que esse 1ºparametro seja um objeto entao eu crio o objeto conforme acima.
+personagem.call(meuObjeto) //3º invocando a function com call passando um this para ela explicitamente.onde o primeiro parametro é o valor de this que a function vai usar. como quero que esse 1ºparametro seja um objeto entao eu crio o objeto conforme acima e usa ele como parametro da função.
 
 //============= // ==================== // =============================// ==============
 
@@ -60,7 +60,7 @@ function personagem(a1,a2){
     console.log(a1,a2)
 }
 
-personagem.call('Etivaldo',42,'M') // posso passar quanquer valor no 1º parametros como this
+personagem.call('Etivaldo',42,'M') // posso passar qualquer valor no 1º parametros como this
 
 
 // ================== // Metódo apply // ======================== // ==================

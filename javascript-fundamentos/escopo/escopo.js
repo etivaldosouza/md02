@@ -34,4 +34,27 @@ function imprimePais(){
 
 imprimePais()
 
-console.log(pais) // como ñ foi utulizada a palavra reservada var então a variavel país passa a ser enxergada tambem fora do escopo da função pois ela se torna global. por isso é muito importante optar por usar a palavra reservada var , let ou const.
+console.log(pais) // como ñ foi utilizada a palavra reservada var então a variavel país passa a ser enxergada tambem fora do escopo da função pois ela se torna global. por isso é muito importante optar por usar a palavra reservada var , let ou const.
+
+
+//==============/ /============== ESCOPO DINÂMICO ===========/ /====================/ /====
+
+
+// Escopo dinnamico é o escopo do js que a variavel só é determinada em tempo de execução
+
+function imprimiThis(){
+    console.log('imprimiThis', this)
+}
+
+function imprimeMensagem(){
+    imprimiThis.call(['sou um objeto'])
+}
+
+function imprimeMensagem2(){
+    imprimiThis.call(['sou um array'])
+}
+
+imprimeMensagem()
+imprimeMensagem2()
+
+
