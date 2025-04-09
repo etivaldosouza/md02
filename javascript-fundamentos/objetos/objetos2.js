@@ -49,6 +49,7 @@ var usuario3 = {
  console.log(ultimo)
 
  //====================//==============================
+ // uma função que tem como parametro um objeto
 
 function imprimeUsuario(usuario) {
     console.log(usuario.nome)
@@ -98,11 +99,29 @@ var usuarioFunction = {
     sexo: 'M'
 }
 
-var prop = Object.keys(usuarioFunction)
+var prop = Object.keys(usuarioFunction) // coloca todas as propriedades do objetos num array
 console.log(prop)
 
+console.log(Object.values(usuarioFunction)) // coloca os valores do objetos em um array
+
+//iterando sobre o array das propriedades do objeto usando o for normal
 for(c = 0; c < prop.length; c++){
-    console.log(`na posição ${c} está o valor ${prop[c]}`)
+    console.log(`na posição ${c} está a propriedade ${prop[c]}`)
+}
+
+// usando o for of:
+
+var usuarioFunction = {
+    nome: 'Ayrton Teshima',
+    idade: '26',
+    sexo: 'M'
+}
+
+var props = Object.keys(usuarioFunction)
+console.log(props)
+
+for(var propri of props){ // os valores de props são automaticamente armazenados na variavel criada propri
+    console.log(propri)
 }
 
 //================//====================
