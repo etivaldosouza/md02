@@ -20,7 +20,7 @@ console.log(usuario['ultimo-nome']) // como a chave tem um caractere especial pr
 
 usuario.ano = 2025 // adicionando number
 console.log(usuario)
-console.log(usuario.ano)
+console.log(usuario.ano) //imprime só o valor da propriedade ano
 
 // deletando propriedade (delete)
 
