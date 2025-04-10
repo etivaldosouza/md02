@@ -1,4 +1,4 @@
-// é uma palavra reservada que dependendo de onde a gente usa dentro do sistema ela assume um valor diferente(possui um escopo dinânico)
+//this é uma palavra reservada que dependendo de onde a gente usa dentro do sistema ela assume um valor diferente(possui um escopo dinânico)
 
 function Usuario() {
     this.nome = 'Ayrton',//criando propriedades p/ o objeto this

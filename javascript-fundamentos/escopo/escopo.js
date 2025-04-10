@@ -23,7 +23,7 @@ pessoa()
 
 console.log(nome) // ira dá erro pois a variavel nome só existe dentro do escopo da function pessoa.
 
-// obs: é importante usar a palavra reservada var para declarar a variavel como local pois se eu usar a variavel sem a palavra reservada var a variavel passa a ser enxergada fora do escopo da funcao passando a ser uma variavel global ou seja ela passa a ser armazenada dentro do objeto window
+// obs: é importante usar a palavra reservada var para declarar a variavel como local pois se eu usar a variavel sem a palavra reservada var a variavel passa a ser enxergada fora do escopo da funcao passando a ser uma variavel global ou seja ela passa a ser armazenada dentro do objeto window e torca-se acessivel em toda a aplicação
 
 // exemplo: 
 
@@ -40,7 +40,7 @@ console.log(pais) // como ñ foi utilizada a palavra reservada var então a vari
 //==============/ /============== ESCOPO DINÂMICO ===========/ /====================/ /====
 
 
-// Escopo dinnamico é o escopo do js que a variavel só é determinada em tempo de execução
+// Escopo dinamico é o escopo do js em que a variavel só é determinada em tempo de execução
 
 function imprimiThis(){
     console.log('imprimiThis', this)
@@ -75,3 +75,19 @@ if (true){
 
 console.log(youtube)
 console.log(autor) // * vai da erro pq foi usado a variavel com palavra reservada let. ela so funciona dentro do escopo do bloco
+
+
+
+// ñ consigo redeclarar uma variavel com let
+// no exemplo abaixo caso eu execute os dois grupos de codigos irá da erro diferende de se usar a variavel com var
+
+let nome = 'etivaldo'
+console.log(nome)
+
+let nome = 'souza'
+console.log(nome)
+
+{
+    let nome = 'coelho'
+    console.log(nome)
+}
