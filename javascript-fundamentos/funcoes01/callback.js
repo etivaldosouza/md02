@@ -16,11 +16,11 @@ function somaCallback(a,b,fnCallback) { // 1º
     return fnCallback(a+b)
 }
 
-var multiplica = function(total){  //3º
+var multiplica = function(total){  //2.1º
     return total*2
 }
 
-console.log(somaCallback(10,3,multiplica))  
+console.log(somaCallback(10,3,multiplica))  //2.0, 3º
 
 /* 
     2ºconsole.log(somaCallback(10,3)
