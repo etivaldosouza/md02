@@ -58,3 +58,20 @@ imprimeMensagem()
 imprimeMensagem2()
 
 
+//==============/ / escopo de bloco / /==========================
+
+// let: usado para variaveis em escopo de bloco. ou seja p/  varuaveis dentro de um escopo de bloco tipo if, for etc. só vai ser vista dentro desse escopo
+
+// o let é usado quando eu quero q a variavel exista apenas dentro de um escopo de bloco; para que ñ seja vista fora de um escopo de bloco. se eu quero q uma variavel seja vista dentro e fora de um determinado escopo eu devo usar a palavra variavel var.
+
+// oo usar o var a variavel permite ser vista em mais de um escopo oq ñ acontece ao usar o let usado apenas para quando quero q ela funcione apenas dentro de um determinado escopo.
+
+if (true){
+    var youtube = 'programadoranordo'
+    let autor = 'Ayrton' //*
+    console.log(youtube)
+    console.log(autor)
+}
+
+console.log(youtube)
+console.log(autor) // * vai da erro pq foi usado a variavel com palavra reservada let. ela so funciona dentro do escopo do bloco
