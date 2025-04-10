@@ -91,3 +91,74 @@ console.log(nome)
     let nome = 'coelho'
     console.log(nome)
 }
+
+
+
+//===========/ / CONSTANTE(CONST) / /===================/ /====
+
+// CONSTANTE É UM VALOR QUE Ñ MUDA
+
+// o const tb trabalha no escopo de bloco ou de function assim como let. só tem visibilidade dentro do escopo do bloco ou da function
+
+
+if(true){
+    const autor = 'Ayrton'
+    console.log(autor)
+}
+
+// redeclarar != reatribuir.
+
+//redeclarar: criar uma variavel com o mesmo nome.
+// nem com let e nem com const eu consigo redeclarar uma variavel num mesmo escopo só se estiverem em escopos diferentes.
+
+
+var nome = 'Etivaldo'
+console.log(nome)
+var nome = 'Carlos'
+console.log(nome)
+
+// em blocos diferentes:
+
+if(true){
+    const nome = 'josé'
+    console.log(nome)
+}
+
+const nome = 'Paulo'
+console.log(nome)
+
+//===================//===================//==========
+
+// reatribuir = forçar a mudar o valor da variavel:
+
+// só consegue com o var e com o let com o const ñ
+// * consegue alterar um valor parcial na const( caso de array)
+
+
+
+let nome = 'Etivaldo' 
+console.log(nome)
+nome = 'Carlos'
+console.log(nome)
+
+// redeclarar e reatribuir => apenas c/ var
+
+// reatribuir => apenas var e let
+
+// o const ñ consigo nem redeclarar e nem reatribuir.
+
+
+//* podemos alterar um valor da variavel com o const mas sem redeclarar ou reatribuir. exemplo:
+
+const competencias = ['JavaScript,','Python,','Go']
+console.log(competencias)
+
+competencias[1] = 'Scala' // alterando um valor dentro da variavel
+console.log(competencias)
+ 
+
+const nome = ['etivaldo','souza']
+console.log(nome)
+const nome = ['jose','souza'] // redeclarando e reatribuindo(irá da erro)
+console.log(nome)
+
