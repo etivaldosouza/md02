@@ -1,6 +1,10 @@
-//metodo maps: utilizado para manipular um array e retornar um resultado de um novo array com o valor do primeiro array modificado.
+//metodo maps: utilizado para manipular um array e retornar um resultado em um novo array com o valor do primeiro array modificado.
 
-// o map ele usa uma funcao de calback como parametro e essa funcao  vai manipular  cada valor desse array entao esse map iterar esse valor desse array um a um e ele vai aplicar em cada valor a funcao que a gente vai passar.
+// O método map() é uma função dos arrays em JavaScript. Ele é usado quando você quer transformar cada item de um array e criar um novo array com esses novos valores. sempre vai retornar um array
+
+// Pensa assim: você tem uma lista de coisas e quer fazer algo com cada item da lista — tipo multiplicar por 2, transformar em letras maiúsculas, ou pegar só uma parte de cada item.
+
+// o map ele usa uma funcao de calback como parametro e essa funcao  vai manipular  cada valor desse array entao esse map vai iterar esse valor desse array um a um e ele vai aplicar em cada valor a funcao que a gente vai passar.
 
 // alterando um array de numeros e criando um novo array formado  pelo array antigo * 2 
 
@@ -9,7 +13,7 @@
 const numeros = [2,3,6,5,10]
 let novoArray = []
 for(let c = 0; c < numeros.length;c++) {
-    novoArray.push(numeros[c] *2 )
+    novoArray.push(numeros[c] * 2)
 }
 
 console.log(numeros)
@@ -23,7 +27,7 @@ console.log(novoArray)
 
 const numeros = [2,3,6,5,10]
 
-numeros.map(function(numero){ // função map recep uma função de callback que percorre cada elemento do array
+numeros.map(function(numero){ // função map recep uma função de callback onde vai percorre cada elemento do array aplicando a função de callback 
     console.log(numero)
 })
 
