@@ -16,7 +16,7 @@ console.log(nomes)
 const linguagens = ['JavaScript','PHP','Go','Python']
 const removed = linguagens.splice(2,2,'HTML','CSS') // removo o elemento a partir do indice 2 no total de 2elementos.
 console.log(removed) // retorna os removidos
-console.log(linguagens)
+console.log(linguagens) // retorna o array linguagens com as alteraçoes.
 
 
 

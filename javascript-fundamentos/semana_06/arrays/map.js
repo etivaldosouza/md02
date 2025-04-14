@@ -6,6 +6,8 @@
 
 // o map ele usa uma funcao de calback como parametro e essa funcao  vai manipular  cada valor desse array entao esse map vai iterar esse valor desse array um a um e ele vai aplicar em cada valor a funcao que a gente vai passar.
 
+// o metodo map é um metodo de array que vai utilizar uma função como parametro para iterar em cada elemento do array.
+
 // alterando um array de numeros e criando um novo array formado  pelo array antigo * 2 
 
 // utilizando o loop for normal: 
