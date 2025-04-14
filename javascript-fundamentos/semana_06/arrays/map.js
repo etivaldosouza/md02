@@ -53,8 +53,19 @@ const numeros = [2,3,6,5,10]
 const novoArray = numeros.map(numero => numero * 2)
 console.log(novoArray)
 
+//simplificando mais ainda
+console.log('arrayMapArrow',numeros.map(numero => numero * 2))
 
+//============/ /===============/ /==============/ /==========
 
+// transformando um array de nomes em array de nomes c/ letras minusculas
 
+const usuarios = ['Ayrton','Teshima','Teste','Fulano de Tal']
 
+const minusculas = usuarios.map(function(nome){
+    return nome.toLocaleLowerCase()
+})
 
+console.log(minusculas)
+
+console.log(usuarios.map(nome => nome.toLocaleLowerCase()))//maneira simplificada com arrowfunction
