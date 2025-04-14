@@ -1,3 +1,5 @@
+//filter : criar um novo array mas filtrando fora alguns desses itens. os elementos que vão para o novo array vao fazer parte desse array respeitando um parametro
+
 const produtos = [
     
     {id: 1, nome: 'detergente', valor: 2.00, categoria: 'limpeza'},
@@ -6,3 +8,4 @@ const produtos = [
     {id: 4, nome:'queijo', valor: 7.00, categoria:'alimento'},
     {id: 5, nome:'leite', valor: 2.20, categoria:'alimento'}
 ]
+
