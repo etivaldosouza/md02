@@ -27,3 +27,25 @@ const produtos = [
 ]
 
 console.log(produtos.filter(p => p.categoria === 'alimento').map(p => p.nome)) 
+
+
+//==========/ /outra maneira combinando map e filter / /========
+
+const produtos = [
+    
+    {id: 1, nome: 'detergente', valor: 2.00, categoria: 'limpeza'},
+    {id: 2, nome:'amaciante', valor: 6.50, categoria:'limpeza'},
+    {id: 3, nome:'pão', valor: 2.00, categoria:'alimento'},
+    {id: 4, nome:'queijo', valor: 7.00, categoria:'alimento'},
+    {id: 5, nome:'leite', valor: 2.20, categoria:'alimento'}
+]
+
+
+const alimentos = produtos.filter(function(produto){
+    return produto.categoria === 'alimento'
+    
+})
+
+const nomes = alimentos.map(produto => produto.nome)
+
+console.log(nomes)
