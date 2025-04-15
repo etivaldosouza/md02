@@ -34,8 +34,9 @@ var usuario2 = {
         ultimo: 'Teshima',
     }
 }
-var { nome: { ultimo }}  = usuario2 
+var { nome: { ultimo,primeiro }}  = usuario2 
 console.log(ultimo)
+console.log(primeiro)
 
 //====================//=============================//=========
 //criando valores defal: caso ñ haja uma determinada propriedade colocamos um valor padrão
@@ -101,6 +102,7 @@ var usuarioFunction = {
 
 var prop = Object.keys(usuarioFunction) // coloca todas as propriedades do objetos num array
 console.log(prop)
+
 
 console.log(Object.values(usuarioFunction)) // coloca os valores do objetos em um array
 
