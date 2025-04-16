@@ -54,6 +54,7 @@ const novoArray = numeros.map(numero => numero * 2)
 console.log(novoArray)
 
 //simplificando mais ainda
+
 console.log('arrayMapArrow',numeros.map(numero => numero * 2))
 
 //============/ /===============/ /==============/ /==========
