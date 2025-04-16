@@ -71,3 +71,4 @@ const nomes = produtos.map(produto => produto.nome)
 console.log(nomes)
 
 console.log(produtos.map(produto => produto.nome)) // forma mais simplificada
+
