@@ -12,6 +12,13 @@ const total = numeros.reduce(function(valorAcumulador,valorArray){
 
 console.log(total)
 
+//========/ / utilizando ArrowFunction / /==============/ /===================
+const numeros = [1,2,3,4]
+
+ console.log(numeros.reduce((acumulador,valorArray) => acumulador + valorArray,0))
+
+
+
 //===========/ /==============/ /===========/ /====================
 
 
