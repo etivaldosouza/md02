@@ -9,13 +9,43 @@ const produtos = [
     {id: 5, nome:'leite', valor: 2.20, categoria:'alimento'}
 ]
 
+//============/ /=============/ /===========================
+
 // combinando map e filter. criando um array de produtos de categoria alimento e com o nome dos produtos
+
+const produtos = [
+    
+    {id: 1, nome: 'detergente', valor: 2.00, categoria: 'limpeza'},
+    {id: 2, nome:'amaciante', valor: 6.50, categoria:'limpeza'},
+    {id: 3, nome:'pão', valor: 2.00, categoria:'alimento'},
+    {id: 4, nome:'queijo', valor: 7.00, categoria:'alimento'},
+    {id: 5, nome:'leite', valor: 2.20, categoria:'alimento'}
+]
+
+const nome = produtos.filter(function(p){
+    return p.categoria === 'alimento'
+}).map((p)=> p.nome)
+
+console.log(nome)
+
+
+//==============/ / maneira 2 com arrow function / /=======================
+
+const produtos = [
+    
+    {id: 1, nome: 'detergente', valor: 2.00, categoria: 'limpeza'},
+    {id: 2, nome:'amaciante', valor: 6.50, categoria:'limpeza'},
+    {id: 3, nome:'pão', valor: 2.00, categoria:'alimento'},
+    {id: 4, nome:'queijo', valor: 7.00, categoria:'alimento'},
+    {id: 5, nome:'leite', valor: 2.20, categoria:'alimento'}
+]
 
 const alimentos = produtos.filter(p => p.categoria === 'alimento').map(p => p.nome)
 
 console.log(alimentos)
 
-// ou :
+
+//===========/ /========= ou : / /=============================
 
 const produtos = [
     
@@ -27,6 +57,7 @@ const produtos = [
 ]
 
 console.log(produtos.filter(p => p.categoria === 'alimento').map(p => p.nome)) 
+
 
 
 
@@ -50,3 +81,4 @@ const alimentos = produtos.filter(function(produto){
 const nomes = alimentos.map(produto => produto.nome)
 
 console.log(nomes)
+
