@@ -1,4 +1,4 @@
-// metodo slice: exclui elementos atraves do intervados de indices indicado no parametro. onde no primeiro parametro da funcao é o primeiro elemento do intervalo a ser removido e o segundo valor de indice indica até onde vai remover desconsiderando o ultimo.
+// metodo slice: exclui elementos atraves do intervados de indices indicado no parametro. onde no primeiro parametro da funcao é o primeiro elemento do intervalo a ser removido e o segundo valor de indice indica até onde vai remover desconsiderando o ultimo.ex: (0,3) vai remover do primeiro elemenro até o elemento 2. 
 
 //retorna uma copia do array sem modificar o array original.
 

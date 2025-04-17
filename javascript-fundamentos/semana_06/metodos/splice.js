@@ -1,6 +1,7 @@
 // metodo splice: altera conteudo de uma lista, adicionando novos elementos enquanto remove elementos antigos podendo receber dois ou mais argumentos na chamada da função
 
 
+
 // .slice(a1,a2, a3,...) onde:
 
 // a1 => indice que a partir dele vai ser removidodo
