@@ -22,13 +22,13 @@ console.log(soma)
 
 //o primeiro parametro que é uma function de callback recebe dois parametros:
 // o primeiro é o valor atual(valor acumulador que no caso começa com o 0)
-//o segundo é de fato o valor que to iterando do array
+//o segundo é de fato o valor que to iterando do array(o valor de cada array)
 
 const numeros = [2,3,6,5,10]
 
 const somaReduce = numeros.reduce(function(valorAcumulador,valorArray) {
     return valorAcumulador + valorArray
-}, 0)
+}, 0) // o 0 é o valor inicial ou seja vai começar por ele q no caso é ele pq to trabalhando com nrs se fosse str o valor inicial poderia ser uma str vazia por exemplo.
 
 console.log(somaReduce)
 
@@ -37,53 +37,3 @@ console.log(somaReduce)
 
 
 
-const pessoas = [
-    {
-        nome:'Ayrton',
-        idade: 27
-    },
-
-    {
-        nome: 'João',
-        idade: 14
-    },
-
-    {
-        nome: 'Maria',
-        idade: 23
-    },
-
-    {
-        nome:'Joana',
-        idade: 21
-    },
-    {
-        nome: 'Lucas',
-        idade:32
-    },
-
-    {
-        nome: 'Mateus',
-        idade: 15
-    },
-
-    {
-        nome: 'Isa',
-        idade: 23
-    },
-
-    {
-        nome: 'Luiza',
-        idade: 17
-    }
-    
-]
-
-pessoasAgrupadas = pessoas.reduce(function(valorAcumulador,valorArray) {
-    const propMaiorOuMenor  = valorArray.idade >= 18? 'maiores':'menores'
-    
-    valorAcumulador[propMaiorOuMenor].push(valorArray)
-    return valorAcumulador
-},{ maiores:[], menores: []})
-
-console.log('pessoasAgrupadas',pessoasAgrupadas)
