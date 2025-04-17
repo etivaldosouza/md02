@@ -4,7 +4,7 @@
 
 // Pensa assim: você tem uma lista de coisas e quer fazer algo com cada item da lista — tipo multiplicar por 2, transformar em letras maiúsculas, ou pegar só uma parte de cada item.
 
-// o map ele usa uma funcao de calback como parametro e essa funcao  vai manipular  cada valor desse array entao esse map vai iterar esse valor desse array um a um e ele vai aplicar em cada valor a funcao que a gente vai passar.
+// o map ele usa uma funcao de calback como parametro e essa funcao  vai manipular  cada valor desse array "entao esse map vai iterar esse valor desse array um a um" e ele vai aplicar em cada valor a funcao que a gente vai passar.
 
 // o metodo map é um metodo de array que vai utilizar uma função como parametro para iterar em cada elemento do array.
 
@@ -29,7 +29,7 @@ console.log(novoArray)
 
 const numeros = [2,3,6,5,10]
 
-numeros.map(function(numero){ // função map recep uma função de callback onde vai percorre cada elemento do array aplicando a função de callback 
+numeros.map(function(numero){ // função map recep uma função de callback onde vai percorre cada elemento do array aplicando a função de callback (numero seria uma especie de variavel que criamos que vai armazenar cada item do array)
     console.log(numero)
 })
 
@@ -46,6 +46,7 @@ console.log(numeros) // imprime array antigo
 console.log(novoArray) // imprime  array nobo
 
 //=========/ /===============/ /======================/ /=====
+
 // usando arrow function(maneira simplificada)
 
 const numeros = [2,3,6,5,10]

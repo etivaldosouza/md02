@@ -7,6 +7,7 @@ let primMaiusc = nomes.map(function(str){
     return str.charAt(0).toLocaleUpperCase() + str.slice(1).toLocaleLowerCase()// vai pegar do elemento do indice um em diante
 })
 
+// charAt() usado p/ quando quero pegar um caractere especifico. 
 
 console.log(primMaiusc)
 
