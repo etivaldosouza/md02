@@ -29,6 +29,7 @@ const produtos = [
 console.log(produtos.filter(p => p.categoria === 'alimento').map(p => p.nome)) 
 
 
+
 //==========/ /outra maneira combinando map e filter / /========
 
 const produtos = [
