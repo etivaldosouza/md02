@@ -4,10 +4,12 @@ const numeros = [2,3,6,5,10]
 
 const numerosDobro = numeros.map(dobro) // double é a funcao de callbak q to passando
 
-/*function dobro(element,index,array){
+function dobro(element,index,array){
     console.log(element,index,array)
 }
-*/
+
+
+
 
 function dobro(element){
     return element * 2
