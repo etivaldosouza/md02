@@ -33,7 +33,20 @@ const nomUnico = nomes.filter(function(nome,index,array){
 console.log(nomUnico)
 
 // array.indexOf(nome) → Procura onde o nome aparece pela primeira vez no array.
+
 //index → É o índice do nome que estamos olhando agora.
+
+/* 
+
+    Se a posição onde ele apareceu pela primeira vez for igual ao índice atual, isso significa: indexOf(elemento) === index
+
+    É a primeira vez que encontramos esse nome → Mantém no novo array.
+
+    Se forem diferentes, significa:
+
+    Esse nome já apareceu antes → Não coloca no novo array.
+
+*/
 
 // ana aparece a 1ª vez no indice 0, bruno aparece a 1ªvez no indice 2...
 
@@ -44,6 +57,15 @@ const nomes = ["Ana", "Bruno", "Carlos", "Ana", "Daniela", "Bruno", "Eduardo"];
 const nomeUnico = nomes.filter(function(nome,index,array){
     console.log(nome,index,array)
 })
+
+
+//=============== utilizando o arrow function ===========//
+
+const nomes = ["Ana", "Bruno", "Carlos", "Ana", "Daniela", "Bruno", "Eduardo"]
+
+const nomeUnico = nomes.filter((nome,index,array) => array.indexOf(nome) === index )
+
+console.log(nomeUnico)
 
 
 //============= utilizando o new Set() ================//
