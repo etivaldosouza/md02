@@ -76,14 +76,3 @@ const numeroUnico = [...new Set(numeros)]
 console.log(numeroUnico)
 
 
-const numeros = [2,3,4,5,4,12,19,7,2,5]
-
-const numUnico = numeros.filter(function(numero,index,array){
-    console.log(numero,index,array)
-})
-
-console.log(numUnico)
-
-const numeros = [2,3,4,5,4,12,19,7,2,5]
-const numUnico = numeros.filter((numero,index,array) => array.indexOf(numero) === index)
-console.log(numUnico)

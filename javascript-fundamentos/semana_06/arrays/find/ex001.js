@@ -1,4 +1,4 @@
-// o metodo find() usado p/ quando for preciso procurar ou verificar por um valor dentro de um array ou objeto sendo que esse retorno vai ser do primeiro elemento que satisfazer esse teste.
+// o metodo find() usado p/ quando for preciso procurar ou verificar por um valor dentro de um array ou objeto, sendo que esse retorno vai ser do primeiro elemento que satisfazer esse teste.
 
 //propucrando por uma pizza que comece pela letra 'm': (vai retornar sempre o 1º que tiver com a letra m, ou seja no find() retorna apenas um unico elemento.)
 
@@ -52,3 +52,6 @@ const pizza = [
 const pizzaM = pizza.filter(nome => nome.charAt(0) === 'm')
 
 console.log(pizzaM)
+
+//===========================================================//
+
