@@ -53,5 +53,7 @@ const pizzaM = pizza.filter(nome => nome.charAt(0) === 'm')
 
 console.log(pizzaM)
 
-//===========================================================//
 
+//.startsWith(parametro) usado para quando quero encontrar algo que comece com...
+
+// .endsWith(parametro) usado para quando quero encontrar algo que termine com...

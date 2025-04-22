@@ -16,3 +16,21 @@ posso usar dentro de um if/else:
 if(usuario.include('brasileiro')){
     codigo
 }
+
+*/
+
+//=====================================================//
+
+// procura se existe um item do array e retorna true ou false
+
+const numeros = [1,5,6,8,20,45,50]
+
+console.log(numeros.includes(10))
+
+//========================================================
+
+const pessoas = ['adamastor','joana','mauricio','lalau']
+
+console.log(pessoas.includes('neto'))
+
+
