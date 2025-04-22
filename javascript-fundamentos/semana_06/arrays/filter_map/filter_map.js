@@ -1,6 +1,6 @@
 
 /*
-    pesquisando num array de objetos pessoas com sobrenome souza.foi preciso utilizar metodo filter e map p/ retornar um array apenas com a propriedade de nome
+    pesquisando num array de objetos pessoas com sobrenome souza.foi preciso utilizar metodo filter e map p/ retornar um array apenas com o resultado da propriedade de nome que são de sobrenome souza.
 
 */
 
