@@ -3,7 +3,7 @@ const data = [
         name: 'sujeito',
         age: 23,
         salary: 4000,
-        active: true,
+        active: false,
         team: 'Frontend',
         bonus:0,
     },
@@ -48,7 +48,8 @@ const data = [
 ]
 
 const user = data.filter(function(users){ //users é uma variavel que crio q vai armazenar cada elemento(item) do array
-    return users.salary >= 4000
-}).map(nomes => ({name: nomes.name,salary: nomes.salary})); // caso eu queira que a saida seja apenas os nomes das pessoas.
-
+    return users.salary >= 4000 && users.active // somente os >=4000 e active 
+}).map(nomes => ({name: nomes.name,salary: nomes.salary})); // caso eu queira que a saida seja apenas as propriedades  nomes e salario
 console.log(user)
+
+// o filter também recebe uma funcao onde  conforme a condição passada irá retornar um array com os elementos econtrados diferentemente do find() q retorna sempre o primeiro.
