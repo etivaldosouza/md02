@@ -127,11 +127,12 @@ const pessoa = data.map(function(nomes){
 
         nomes.salary += 900
         nomes.bonus += 1
-        nomes.mensagem = 'houve aumento de R$ 900'
+        nomes.mensagem = 'houve aumento de R$ 900' // acrescentando propriedade
 
     }else{
         nomes.mensagem = 'ñ houve aumento'
     }
+
     return {
         
         name: nomes.name, 
@@ -140,4 +141,6 @@ const pessoa = data.map(function(nomes){
     }
 })
 
+console.log(pessoa)
+console.log(data.reverse()) // inverte a ordem
 console.table(pessoa);
