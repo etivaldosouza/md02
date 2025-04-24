@@ -35,5 +35,17 @@ console.log(somaReduce)
 // exemplo com reduce  onde vamos pegar um array de objetos e retornar um objeto onde vai ter uma chave com as pessoas que sao maiores  de idades dentro de um array e outra chave apenas com pessoas menores de idade dentro de um array.
 
 
+/* explicação:
+
+    // 0 é o valor inicial(como estou trabalhando com nr o valor é ele. por ele começa a contagem)
+
+    valorAcumulador + valorArray
+        0           +     2      
+        2           +     3
+        5           +     6
+        11          +     5
+        16          +     10
+        26                fim
+*/
 
 

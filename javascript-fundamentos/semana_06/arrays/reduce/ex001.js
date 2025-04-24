@@ -1,4 +1,4 @@
-// com o reduce podemos gerar um único valor atraves de uma coleção(lista ou array). por exemplo quando temos um array de numeros e queremos somar todos os valores desse array e obter um valor total.
+// com o reduce podemos gerar um único valor atraves de uma coleção(lista ou array). por exemplo, quando temos um array de numeros e queremos somar todos os valores desse array e obter um valor total.
 
 // no reduce a função de callback vai receber dois parametros: um é o valor acumulado e o outro é o item do array
 
@@ -8,7 +8,7 @@ const numeros = [1,2,3,4]
 
 const total = numeros.reduce(function(valorAcumulador,valorArray){
     return valorAcumulador + valorArray
-},0)
+},0) // o 0 é o valor inicial(começa a contar por ele)
 
 console.log(total)
 
