@@ -82,3 +82,20 @@ const nomes = alimentos.map(produto => produto.nome)
 
 console.log(nomes)
 
+
+//=============== concatenando filter e map ==================================// 
+
+const produtos = [
+    
+    {id: 1, nome: 'detergente', valor: 2.00, categoria: 'limpeza'},
+    {id: 2, nome:'amaciante', valor: 6.50, categoria:'limpeza'},
+    {id: 3, nome:'pão', valor: 2.00, categoria:'alimento'},
+    {id: 4, nome:'queijo', valor: 7.00, categoria:'alimento'},
+    {id: 5, nome:'leite', valor: 2.20, categoria:'alimento'}
+]
+
+const prodLimp = produtos.filter(function(lpz){
+    return lpz.categoria === 'alimento'
+}).map(nomes => ({id: nomes.id , nome: nomes.nome})) // imprimindo apenas os id e nome dos elementos apenas com as propriedades id e nome
+
+console.log(prodLimp)
