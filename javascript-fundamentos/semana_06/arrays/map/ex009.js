@@ -1,3 +1,6 @@
+// o map é utilizado para quando quero percorrer um array, aplicar uma funcao e retornar outro arrar
+
+
 const data = [
     {
         name: 'sujeito',
@@ -47,14 +50,9 @@ const data = [
 
 ]
 
-const user = data.find(function(item){
-    return item.age >= 25 
+const pessoa = data.map(function(nomes,index){
+    return `olá ${nomes.name}`
 })
-console.log(user)
 
-// no fild() ele vai percorrer cada elemento do array(item) e com base na condição que passamos ele devolve o ''primeiro'' item que ele encontrar conforme a condição passada
-
-
-
-
+console.log(pessoa)
 

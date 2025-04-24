@@ -1,3 +1,6 @@
+// o findIndex() utilizado para quando queremos encontrar um elemento e a posição dele dentro do array. o retorno será a posição do 1º elemento encontrado
+
+
 const data = [
     {
         name: 'sujeito',
@@ -47,14 +50,19 @@ const data = [
 
 ]
 
-const user = data.find(function(item){
-    return item.age >= 25 
-})
-console.log(user)
+const pessoa = data.findIndex(function(nomes){
+    return nomes.name === 'bauer'
+}) 
 
-// no fild() ele vai percorrer cada elemento do array(item) e com base na condição que passamos ele devolve o ''primeiro'' item que ele encontrar conforme a condição passada
-
-
-
+console.log(pessoa)
+console.log(data[pessoa].active = false) // alterando a propriedade active o objeto data
+console.log(data)
 
 
+
+/*
+    console.log((pessoa).active = false) // alterando a propriedade active
+    console.log(data.active = false)
+    console.log(data)
+    ou :
+*/ 

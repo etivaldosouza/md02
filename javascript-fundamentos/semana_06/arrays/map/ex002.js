@@ -18,5 +18,5 @@ console.log(primMaiusc)
 
 let nomes =  ['etivaldo', 'carlos','souza','pedro','guatavo']
 
-let novo = nomes.slice(0,3) // remove o elemnto d indice 0 até o de indice 2(sempre um a menos)
+let novo = nomes.slice(0,3) // remove o elemento do indice 0 até o de indice 2(sempre um a menos) // sem alterar o array original
 console.log(novo)
