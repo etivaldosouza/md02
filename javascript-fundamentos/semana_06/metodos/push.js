@@ -11,5 +11,8 @@ console.log(usuario)
 
 // p/ incluir elemento(s) no final do array:
 
-usuario.push('RJ','PE') // se eu jogar dentro de uma variavel e mandar imprimir ele retorna o tamanho da variavel(qte de elementos) 
+usuario.push('RJ','PE') // se eu jogar dentro de uma variavel e mandar imprimir ele retorna o tamanho da variavel(qte de elementos) *
 console.log(usuario)
+
+const elementosNovos = usuario.push('RJ','PE') //* retorna quantidade de elementos
+console.log(elementosNovos)
