@@ -143,4 +143,6 @@ const pessoa = data.map(function(nomes){
 
 console.log(pessoa)
 console.log(data.reverse()) // inverte a ordem
-console.table(pessoa);
+
+console.table(pessoa); // MOSTRA NUM FORMATO DE TABELA
+

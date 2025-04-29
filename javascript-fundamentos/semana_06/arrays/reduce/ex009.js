@@ -31,4 +31,4 @@ const sitFinal = alunos.reduce(function(acumulador,aluno){
     return acumulador   
 },{aprovado:[],recuperacao: [],reprovado: []})
 
-console.log(sitFinal)
+console.table(sitFinal)
