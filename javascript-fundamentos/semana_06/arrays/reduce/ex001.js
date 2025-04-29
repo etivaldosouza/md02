@@ -1,6 +1,8 @@
 // com o reduce podemos gerar um único valor atraves de uma coleção(lista ou array). por exemplo, quando temos um array de numeros e queremos somar todos os valores desse array e obter um valor total.
 
-// no reduce a função de callback vai receber dois parametros: um é o valor acumulado e o outro é o item do array
+// no reduce temos dois parâmetros um é a função de callback(que vai receber dois parametros: um é o valor acumulado,que na primeira iteração esse valor é o valor inicial, e o outro é o item do array) e o outro é o valor inicial.
+
+// o valor inicial vai servir para começar por ele o calculo da função. esse valor pode ser um nr, uma str, um objeto, depende com que vc esta trabalhando.
 
 // calculando o valor todal de um array:
 
