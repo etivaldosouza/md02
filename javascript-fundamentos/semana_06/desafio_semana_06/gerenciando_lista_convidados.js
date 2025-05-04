@@ -1,4 +1,4 @@
-// 1) crie um novo array apenas com os três primeiros convidados, sem modificar o array original.
+// 1) crie um novo array apenas com os três primeiros convidados, sem modificar o array original.(metodo slice())
 
 // 2) Infelizmente, carlos e daniela ñ poderão comparecer. remova-os da lista e adicione gabriel e helena.
 

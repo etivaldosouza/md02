@@ -17,3 +17,11 @@ const produtos = [
         preco: 1500
     }
 ]
+
+const pDesc = produtos.map(function(item){
+    return item.preco * 0.9
+})
+
+console.log() 
+
+
