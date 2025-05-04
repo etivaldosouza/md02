@@ -2,7 +2,7 @@
 
 
 
-// .slice(a1,a2, a3,...) onde:
+// .splice(a1,a2, a3,...) onde:
 
 // a1 => indice que a partir dele vai ser removidodo
 // a2 => quantidade de elementos que vou remover a contar do primeiro argumento
@@ -11,6 +11,7 @@
 const nomes = ['Elian','Carlos','João','Sabrina']
 nomes.splice(2,1,'Matheus')
 console.log(nomes)
+
 
 // caso queria retornar o valor que foi removido só jogar o metodo p/ dentro de uma variavel
 
