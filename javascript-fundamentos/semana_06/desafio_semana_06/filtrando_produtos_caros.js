@@ -19,9 +19,13 @@ const produtos = [
 ]
 
 const pDesc = produtos.map(function(item){
-    return item.preco * 0.9
+    return {
+        nome: item.nome,
+        preco: (item.preco * 0.9).toFixed(2) // arredondar p/ duas casas decimais
+    }
+        
 })
 
-console.log() 
+console.log(pDesc) 
 
 
