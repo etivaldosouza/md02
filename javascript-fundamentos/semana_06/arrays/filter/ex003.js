@@ -13,10 +13,10 @@ console.log(elemento,index,array)
 })
 
 
-const números = [2,3,4,5,4,12,19,7,2,5]
+const numeros = [2,3,4,5,4,12,19,7,2,5]
 
 const numUnico = numeros.filter(function(elemento,index,array){ //lembrando q elemento é cada item(nr no caso) do array
-    return array.indexOf(elemento) === index
+    return array.indexOf(elemento) === index // elemento aparece pela primeira vez no indice q estamos olhando no momento ? só sera filtrado se corresponder.
 })
 
 console.log(numUnico)
@@ -31,6 +31,9 @@ const nomUnico = nomes.filter(function(nome,index,array){
 })
 
 console.log(nomUnico)
+
+
+// explicação:
 
 // array.indexOf(nome) → Procura onde o nome aparece pela primeira vez no array.
 

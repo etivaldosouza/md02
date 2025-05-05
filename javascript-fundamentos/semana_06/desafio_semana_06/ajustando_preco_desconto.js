@@ -33,3 +33,8 @@ const produtos = [
 
     },
 ]
+
+const prodCaros = produtos.filter(produto => produto.preco > 1600).map(produto => obs:'produto caro')
+
+
+console.log(prodCaros)
