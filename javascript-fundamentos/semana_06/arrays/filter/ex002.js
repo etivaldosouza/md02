@@ -1,7 +1,7 @@
 // a sintaxe é a mesma do map, a diferença para é que na função de callback precisa retornar um valor boleano:
 // se for true, siguinifica que vai armazenar o valor no array se for false siguinifica que ñ vai armazenar o valor no array.
 
-// criando um novo array apenas com valores multiplos de 2 a aprtir de um array informado:
+// criando um novo array apenas com valores multiplos de 2 a partir de um array informado:
 
 // com for normal:
 

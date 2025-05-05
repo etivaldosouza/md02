@@ -13,7 +13,7 @@ console.log(elemento,index,array)
 })
 
 
-const numeros = [2,3,4,5,4,12,19,7,2,5]
+const números = [2,3,4,5,4,12,19,7,2,5]
 
 const numUnico = numeros.filter(function(elemento,index,array){ //lembrando q elemento é cada item(nr no caso) do array
     return array.indexOf(elemento) === index
