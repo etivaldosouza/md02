@@ -1,5 +1,5 @@
 /*
-    encontrar todos os produtos que custam mais de R$ 1.600.
+    encontrar todos os produtos que custam mais de R$ 1.600 e adicionando uma nova propriedade ao ao bjeto do array com a chave obs e o valor = 'produto acima de 1600'.
 */
 
 const produtos = [
@@ -34,7 +34,7 @@ const produtos = [
     },
 ]
 
-const prodCaros = produtos.filter(produto => produto.preco > 1600)
+const prodCaros = produtos.filter(produto => produto.preco > 1600).map(produto => ({...produto, obs : 'produto acima de 1600'}))
 
 console.log(prodCaros);
 
