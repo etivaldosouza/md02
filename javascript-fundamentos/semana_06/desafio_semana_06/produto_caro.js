@@ -34,7 +34,7 @@ const produtos = [
     },
 ]
 
-const prodCaros = produtos.filter(produto => produto.preco > 1600).map(produto => ({...produto, obs : 'produto acima de 1600'}))
+const prodCaros = produtos.filter(produto => produto.preco > 1600).map(produto => ({...produto, obs : 'produto acima de 1600',eu:"etivaldo"}))
 
 console.log(prodCaros);
 
