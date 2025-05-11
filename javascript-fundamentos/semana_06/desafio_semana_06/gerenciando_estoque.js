@@ -11,7 +11,7 @@
 let estoque = ['teclado','mouse','monitor','gabinete']
 
 estoque.push('headset') // adicionando elemento no final do array
-estoque.shift() // removendo o primeiro item do array
+estoque.shift() // removendo o primeiro item do array(teclado)
 estoque.splice(1,1,'monitor gamer') // 1- posição do item a ser removido, 1-quantidade de item a ser removidos considerando a partir do item da posição anterior dada, o item monitor gamer é o item a ser incorporado
 
 console.log(estoque)

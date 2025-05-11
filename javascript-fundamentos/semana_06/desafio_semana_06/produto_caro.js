@@ -34,8 +34,25 @@ const produtos = [
     },
 ]
 
-const prodCaros = produtos.filter(produto => produto.preco > 1600).map(produto => ({...produto, obs : 'produto acima de 1600',eu:"etivaldo"}))
+const prodCaros = produtos.filter(produto => produto.preco > 1600).map(produto => ({...produto, obs : 'produto acima de 1600', eu:"etivaldo"}))
 
 console.log(prodCaros);
 
 
+/*
+    explicação:
+    Os parênteses ao redor do objeto { ... } são obrigatórios aqui para dizer ao JavaScript que estamos retornando um objeto literal diretamente.
+
+    Sem os parênteses, o JavaScript pode achar que você está abrindo um bloco de código e gerará erro ou comportamento inesperado.
+
+    ...produto:
+Isso é o operador spread.
+
+Ele copia todas as propriedades do objeto produto original(o anterior) para o novo objeto.
+
+Por exemplo, { nome: 'Notebook', preco: 3000 } será "espalhado" dentro do novo objeto.
+
+obs: 'produto acima de 1600'
+Adiciona uma nova propriedade chamada obs com o valor 'produto acima de 1600'.
+
+*/

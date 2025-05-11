@@ -11,3 +11,16 @@ console.log(novoArray)
 convidados.splice(2,2,'Gabriel','Helena')
 console.log(convidados)
 
+
+/*
+    explicação:
+
+    convidados.splice(2,2,'Gabriel','Helena') 
+    
+    primeior 2: indica o item a ser removido 2. 
+
+    segundo 2: indica a quantidade de itens a ser removidos a contar do primeiro elemento removido.
+
+    gabriel e helena são os que serão incluidos.
+
+*/
