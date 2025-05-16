@@ -12,7 +12,7 @@
 
 // innerHTML
 
-var titulo = document.querySelector('#title')
+var titulo = document.querySelector('#title') // selecionando elemento
 
 titulo.innerHTML = 'Testando o texto alterado'
 
