@@ -12,7 +12,7 @@
 
 var titulo = document.querySelector('#title') // selecionando elemento
 
-titulo.style.color= 'blue' // adicionando o estilo
+titulo.style.color = 'blue' // adicionando o estilo
 
 
 // ========================================== //
@@ -26,7 +26,10 @@ var subtitulo = document.querySelector('.subtitle')
 subtitulo.style.backgroundColor = 'yellow'
 
 
+// ========================================= //
+
+
 // adicionando varios estilos:(.cssText)
 
 var list = document.querySelector('#lista')
-list.style.cssText = 'color: red; background-color: lightgray;font-size: 50px';
+list.style.cssText = 'color: red; background-color: lightgray; font-size: 50px';
