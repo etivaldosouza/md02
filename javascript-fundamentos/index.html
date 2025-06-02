@@ -108,7 +108,7 @@
 
        /*
        
-       OPERADOR &&: (operador de disjunção)
+       OPERADOR &&: (operador de conjunção)
       ---------------- 
       
       - (so é verdadeiro se todos forem verdadeiros e o resultado retorna o último que for verdadeiro
@@ -129,7 +129,7 @@
       
      /*
 
-      OPERADOR || (ou)
+      OPERADOR || (ou) OPERADOR DE DISJUNÇÃO
       -----------------
       - so é falso se todos forem falsos e retorna a ultima que é falsa
 
@@ -144,13 +144,13 @@
       console.log(null || false || 0)
       
       console.log('programador' && 2050 || ' ' && 26) 
-      // ( SE TIVER UM && OU UMA SEQUENCIA DE && E DEPOIS DELE TIVER UM || SENDO O && COMPROVADO COMO VERDADEIRO COMO NO CASO A CIMA Ñ PRECISA PROSSEGUIR COM A ANALISE DO || OQ ACONTECE NO EXEMPLO: V,V = retorna o ultimo verdadeiro(2050) e encerra o programa )
+      // ( SE TIVER UM && OU UMA SEQUENCIA DE &&, E DEPOIS DELE TIVER UM || SENDO O && COMPROVADO COMO VERDADEIRO, COMO NO CASO A CIMA, Ñ PRECISA PROSSEGUIR COM A ANALISE DO || OQ ACONTECE NO EXEMPLO: V,V = retorna o ultimo verdadeiro(2050) e encerra o programa )
 
       console.log('programador' && 2050 && 'a bordo' || 0) // V,V = RETORNA O ULTIMO( 2050) 2050 && 'a bordo' => V,V = retorna o ultimo Verdadeito('a bordo' )
       // obs: o && prevalece sobre o ||
       
-      console.log(null || !'' && 'programador')
- 
+      console.log(null || !'' && 'programador') 
+      console.log(0 || null && 'bola') // obs: o && prevalece sobre o || (null && 'bola') no && sendo um dos elementos F o resultado retorna o primeiro que é F, no caso o null.
    </script>
 </body>
 </html>

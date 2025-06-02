@@ -3,7 +3,7 @@
 
     item: dados/informações contidos na posição atual do array(obrigatorio)
     index: número da posição. sempre começamdo em 0(opcional)
-    arrray: retorna o array completo(opcional)
+    array: retorna o array completo(opcional)
 
 */
 

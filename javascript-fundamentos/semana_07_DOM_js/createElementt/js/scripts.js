@@ -23,4 +23,14 @@ var corpo = document.querySelector('body')
 corpo.appendChild(novoParagrafo) // inserir o elemento filho(<p>) dentro do elemento pai(<body>)
 
 
+/*
+ obs: passos para criar elemento
+*/
 
+// 1) cria o elemento(createElement)
+
+// 2) cria o texto(conteudo do elemento, createTextNode)
+
+// 3)adiciono o texto no elemento(.appendChild)
+
+//  4) adiciono no html(.appendChild)

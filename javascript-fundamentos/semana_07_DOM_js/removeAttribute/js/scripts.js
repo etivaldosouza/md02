@@ -1,6 +1,7 @@
 // removendo atributo
 
-var list = document.querySelector('#listav')
+var list = document.querySelector('#lista') // seleciona o atributo
 
 list.removeAttribute('id')
+
 

@@ -22,6 +22,7 @@ novoParagrafo.appendChild(texto)
 var dv = document.querySelector('#container')//*
 dv.appendChild(novoParagrafo) 
 
-//* a ultima parte pode ser substituida apenas pela linha de baixo: 
 
-container.appendChild(novoParagrafo)
+//* o ultimo passo pode ser substituida apenas pela linha de baixo: 
+
+// container.appendChild(novoParagrafo)

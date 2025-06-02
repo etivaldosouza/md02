@@ -14,9 +14,10 @@ titulo.setAttribute('class', 'testando-atributo') // adicionei o atributo class 
 
 console.log(titulo)
 
+
 var butao = document.querySelector('#btn')
 butao.setAttribute('disabled','desabilitado') // adtributo disable(desabilita o botao) e o valor disabilita p/ dizer que está desabilitado o botao
-
+console.log(butao)
 // ========================================= //
 
 // adicionando atributo id ao subtitulo
@@ -24,7 +25,7 @@ butao.setAttribute('disabled','desabilitado') // adtributo disable(desabilita o 
 var subtitulo = document.querySelector('.subtitle') // seleciona o elemento
 
 subtitulo.setAttribute('id','titulo-2')
-
+console.log(subtitulo)
 
 
 

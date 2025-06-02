@@ -11,3 +11,15 @@ var contheiner = document.querySelector('#container')
 var paragrafo = document.querySelector('#container > p')
 
 contheiner.removeChild(paragrafo)
+
+
+// =================================== //
+
+
+// removendo o elemento em si:
+
+// removendo o subtitulo
+
+var subtitulo = document.querySelector('.subtitle')
+
+subtitulo.remove()
