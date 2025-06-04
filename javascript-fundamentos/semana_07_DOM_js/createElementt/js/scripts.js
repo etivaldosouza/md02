@@ -27,9 +27,9 @@ corpo.appendChild(novoParagrafo) // inserir o elemento filho(<p>) dentro do elem
  obs: passos para criar elemento
 */
 
-// 1) cria o elemento(createElement)
+// 1) cria o elemento(document.createElement('h1'))
 
-// 2) cria o texto(conteudo do elemento, createTextNode)
+// 2) cria o texto(conteudo do elemento, document.createTextNode('texto'))
 
 // 3)adiciono o texto no elemento(.appendChild)
 

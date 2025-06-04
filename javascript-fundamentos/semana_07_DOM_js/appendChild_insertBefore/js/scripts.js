@@ -19,7 +19,7 @@ elemento2.classList = 'conteudo-principal'
 
 // selecionando o elemento referencia que vou usar pra inserir a div antes
 
-var elemento3 = document.querySelector('#container > .conteudo-secundario')
+var elemento3 = document.querySelector('#container > .conteudo-secundario') 
 
 principal.insertBefore(elemento2,elemento3)
 
