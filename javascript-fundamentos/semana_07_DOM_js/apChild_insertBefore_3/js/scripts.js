@@ -5,11 +5,11 @@ console.log(elemento)
 var texto = document.createTextNode('essa é a div filha')
 elemento.appendChild(texto) // crio o nó de texto(conteudo)
 
-var p = document.querySelector('#container p') // seleciono o elemento de referencia
+var p = document.querySelector('#container > p') // seleciono o elemento de referencia
 
-var caixa = document.querySelector('#container') // seleciono o elemento pai
+var pai = p.parentNode // coloco o js p/ achar o pai do elemento de referencia.(tem q ter sempre essa consulta ao elemento pai)
 
-caixa.insertBefore(elemento,p) // coloco na ordem que quero que o elemento criado apareça
+pai.insertBefore(elemento,p) // coloco na ordem que quero que o elemento criado apareça
 
 
 

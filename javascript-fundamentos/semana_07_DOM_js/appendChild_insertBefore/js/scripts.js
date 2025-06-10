@@ -21,8 +21,12 @@ elemento2.classList = 'conteudo-principal'
 
 var elemento3 = document.querySelector('#container > .conteudo-secundario') 
 
-principal.insertBefore(elemento2,elemento3)
+principal.insertBefore(elemento2,elemento3) //*
 
 
+//* principal -> precisa usar o elemento pai como referencia principal
 
+//*  elemento2 -> é o elemento que quero inserir antes do elemento de referencia
+
+//* elemento3 -> é o elemento q uso de referencia p/ inserir o elemento que quero colocar antes dele
 

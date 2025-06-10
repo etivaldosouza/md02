@@ -13,8 +13,8 @@ elemento.appendChild(texto) // adiciono o texto ao elemento
 
 var titulo = document.querySelector('#title')
 
-// seleciono o pai do elemento que quero trocar: 
-var corpo = document.querySelector('body')  //ou: var pai = title.parentNode(mais aconselhavel usar dessa forma)
+// identifica o pai do elemento que quero trocar: 
+var pai = titulo.parentNode
 
 // trocando os elementos de fato:
-corpo.replaceChild(elemento,title)  //ou: pai.replaceChild(elemento,title)
+pai.replaceChild(elemento,title)
