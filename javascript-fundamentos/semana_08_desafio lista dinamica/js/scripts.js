@@ -6,5 +6,5 @@ butao.addEventListener('click','adicionarTarefas')
 
 function adicionarTarefas(){
     const text = tarefas.value.trim()
-    if(text ===)
+    if(text === )
 }
