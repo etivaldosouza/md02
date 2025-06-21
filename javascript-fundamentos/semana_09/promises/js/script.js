@@ -18,11 +18,11 @@ promessa.then(function(dados){
 
 // explicação :
 
-// 1) instaciamos a classe promisse() e colocamos numa variavel. apos instanciar a classe precisamos resolver(resolve) ou rejeitar(reject) essa classe baseada no resultado da promessa e para isso criamos uma função com os dois parametros(resolve/reject)
+// 1) instaciamos a classe promisse() e colocamos numa variavel. após instanciar a classe precisamos resolver(resolve) ou rejeitar(reject) essa classe baseada no resultado da promessa e para isso criamos uma função com os dois parametros(resolve/reject)
 
 // quando receber os dados por exemplo de uma requisicao externa a gente vai verificar se esse dado que etamos recebendo é oq a gente quer. entao fazemos um if / else 
 
-// e depois usamos o metodo then() com uma função utilizando um parametro qualquer no nosso caso chamei o parametro de 'dados' ou seja, esse dados será a nossa resposta do resolve ou do reject.
+// e depois usamos o metodo then() com uma função, utilizando um parametro qualquer, no nosso caso chamei o parametro de 'dados', ou seja, esse dados, será a nossa resposta do resolve ou do reject.
 
 
 // encadeamento de then's
