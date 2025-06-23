@@ -11,8 +11,8 @@ const promessa = new Promise(function(resolve,reject){  // 1
     }
 })
 
-promessa.then(function(dados){
-    console.log(dados)
+promessa.then(function(resposta){ 
+    console.log(resposta)
 })
 
 
@@ -22,7 +22,7 @@ promessa.then(function(dados){
 
 // quando receber os dados por exemplo de uma requisicao externa a gente vai verificar se esse dado que etamos recebendo é oq a gente quer. entao fazemos um if / else 
 
-// e depois usamos o metodo then() com uma função, utilizando um parametro qualquer, no nosso caso chamei o parametro de 'dados', ou seja, esse dados, será a nossa resposta do resolve ou do reject.
+// e depois usamos o metodo then() com uma função, utilizando um parametro qualquer, no nosso caso chamei o parametro de "resposta", ou seja, essa "resposta", será a nossa resposta do resolve ou do reject.
 
 
 // encadeamento de then's
@@ -37,11 +37,11 @@ const promessa2 = new Promise(function(resolve,reject){
     }
 })
 
-promessa2.then(function(dados){
-    return dados.toLowerCase()    
+promessa2.then(function(resposta){
+    return resposta.toLowerCase()    
 })
-.then(function(tudoMinusculo){
-    console.log(tudoMinusculo)
+.then(function(novaResposta){
+    console.log(novaResposta)
 })
  
 
@@ -58,10 +58,10 @@ const promessa3 = new Promise(function(resolve,reject){
 })
 
 .then(function(dados){
-    console.log(err)
+    console.log(dados)
 })
-.catch(function(data){
-    console.log('Aconteceu um Erro: ' + err)
+.catch(function(erro){
+    console.log(`aconteceu um erro: ${erro}`)
 })
 
 
@@ -71,7 +71,7 @@ const promessa3 = new Promise(function(resolve,reject){
 const p1 = new Promise((resolve,reject) => {
     setTimeout(() => {
         resolve('p1 ok! Timeout')
-    }, 2000)
+    }, 5000)
 })
 
 const p2 = new Promise((resolve, reject) => {
@@ -94,7 +94,7 @@ console.log('depois do All') // pra mostrar que primeiro o programa executa esse
 const p4 = new Promise((resolve,reject) => {
     setTimeout(() => {
         resolve('p1 ok! Timeout')
-    }, 2000)
+    }, 5000)
 })
 
 const p5 = new Promise((resolve, reject) => {
@@ -109,6 +109,8 @@ const resolveRace = Promise.race([p4, p5, p6]).then((dados) => {
     console.log(dados)
 })
 
+// Fetch request na API do Github
+// Fetch API
 
 const userName = 'etivaldosouza'
 fetch(`https://api.github.com/users/${userName}`,{
