@@ -11,14 +11,15 @@ const promessa = new Promise(function(resolve,reject){  // 1
     }
 })
 
-promessa.then(function(resposta){ 
+promessa.then(function(resposta){  // resposta(posso dá qualquer nome como parametro) é o resultado que tô esperando  pra minha promessa(postivo ou erro)
+
     console.log(resposta)
 })
 
 
 // explicação :
 
-// 1) instaciamos a classe promisse() e colocamos numa variavel. após instanciar a classe precisamos resolver(resolve) ou rejeitar(reject) essa classe baseada no resultado da promessa e para isso criamos uma função com os dois parametros(resolve/reject)
+// 1) instaciamos a classe promisse() e colocamos numa variavel. após instanciar a classe precisamos resolver(resolve) ou rejeitar(erro)/(reject) essa classe baseada no resultado da promessa e para isso criamos uma função com os dois parametros(resolve/reject)
 
 // quando receber os dados por exemplo de uma requisicao externa a gente vai verificar se esse dado que etamos recebendo é oq a gente quer. entao fazemos um if / else 
 
@@ -40,10 +41,12 @@ const promessa2 = new Promise(function(resolve,reject){
 promessa2.then(function(resposta){
     return resposta.toLowerCase()    
 })
-.then(function(novaResposta){
-    console.log(novaResposta)
+.then(function(tudoMinusculo){ // tudoMinusculo é o nome q dei para o argumento que estou esperando vindo do argumento anterior(resposta)
+    console.log(tudoMinusculo)
 })
+
  
+//======================//======================//=================
 
 //  retorno do catch()
 
@@ -60,7 +63,7 @@ const promessa3 = new Promise(function(resolve,reject){
 .then(function(dados){
     console.log(dados)
 })
-.catch(function(erro){
+.catch(function(erro){   // o argumento erro vai receber a mensagem q ta vindo do argumento anterior(dados)
     console.log(`aconteceu um erro: ${erro}`)
 })
 
@@ -86,7 +89,10 @@ const resolveAll = Promise.all([p1, p2, p3]).then((dados) => {
     console.log(dados)
 })
 
+
 console.log('depois do All') // pra mostrar que primeiro o programa executa esse codigo depois executa as promessas e por ultimo o metodo all.
+
+//===================================//=========================//
 
 
 //  várias promessas com race
@@ -94,7 +100,7 @@ console.log('depois do All') // pra mostrar que primeiro o programa executa esse
 const p4 = new Promise((resolve,reject) => {
     setTimeout(() => {
         resolve('p1 ok! Timeout')
-    }, 5000)
+    }, 2000)
 })
 
 const p5 = new Promise((resolve, reject) => {
@@ -102,7 +108,7 @@ const p5 = new Promise((resolve, reject) => {
 })
 
 const p6 = new Promise((resolve,reject) => {
-    resolve('p3 ok!')
+    resolve('p6 ok!')
 })
 
 const resolveRace = Promise.race([p4, p5, p6]).then((dados) => {
