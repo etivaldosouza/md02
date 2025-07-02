@@ -7,11 +7,30 @@
 </head>
 <body>
     <h1>API</h1>
-    <p><strong>"Aplication Progame Interface"</strong>
-    
-    
-    
-    </p>
+    <p><strong>"Aplication Progame Interface"</strong></p>
     <p>uma forma de você se comunicar com programas</p>
+
+    <h2>Boas Praticas:</h2>
+    <ol type="I">
+        <li>Utilizar verbos HTTP</li>
+        <li>ñ utilizar barra no final</li>
+        <li>se usar o Resource no plural os demais que vc for utilizar deve ser tb no plural</li>
+    </ol>
+
+    <h2>Verbos HTTP</h2>
+    <ul>
+        <li><strong>GET</strong>: Receber dados de um Resource</li>
+        <li><strong>POST</strong>: Enviar dados p/ ser processadas por um Resource</li>
+        <li><strong>PUT</strong>: Atualizar dados de um Resource</li>
+        <li><strong>DELETE</strong>: Apagar um Resource</li>
+    </ul>
+    <p>http://localhost:3000/clients</p>
+    <p>URI: http://localhost:3000/clients</p>
+    <p>Resource: <strong>clients</strong></p>
+    <h3>Utilizando os verbos HTTP</h3>
+    <p>app.get("clients/id:", function(request,response){})</p>
+    <p>app.post("clients/id:", function(request,response){})</p>
+    <p>app.put("clients/id:", function(request,response){})</p>
+    <p>app.delete("clients/id:", function(request,response){})</p>
 </body>
 </html>
