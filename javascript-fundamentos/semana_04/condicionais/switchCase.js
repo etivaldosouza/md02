@@ -29,8 +29,8 @@ switch(diaSem){
 }   
 
 
-var cor = 'branco' //* posso ñ criar a var ja dentro do parametro do switch
-switch(cor){ //* posso ja testar criando a variavel dentro do parametro( ex: switch('amarelo'))
+var cor = 'branco' //* dá para fazer criar a var: 
+switch(cor){ //* posso já testar criando o valor que quero testar dentro do parametro( ex: switch('amarelo'))
     case 'azul':
         console.log('azul')
         break
@@ -63,3 +63,33 @@ switch('amarelo'){ // posso por a var ou o valor direto
         console.log('ñ identificado')
 }
 
+
+// exemplo 2:
+
+var hoje = new Date()
+var atividade = hoje.getDay()
+
+switch(atividade) {
+    case 0:
+        console.log('descanço')
+        break
+    case 1:
+        console.log('costas e biceps I')
+        break
+    case 2:
+        console.log('peito e triceps I')
+        break
+    case 3:
+        console.log('perna e ombro I')
+        break
+    case 4:
+        console.log('costas e biceps II')
+        break
+    case 5:
+        console.log('peito e triceps II')
+        break
+    case 6:
+        console.log('perna e ombro II')
+        break
+
+}

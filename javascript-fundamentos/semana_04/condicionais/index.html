@@ -26,8 +26,8 @@
         condição simples
         ---------------- 
         é uma interrupção no fluxo do programa ou seja ele interrompe o fluxo sequencial
-        para fazer um teste lógico que
-        caso  esse teste lógico seja verdadeiro o código será executado.
+        para fazer um teste lógico que:
+        caso  esse teste lógico seja verdadeiro o código será executado caso seja falso ñ será executao.
 
         */
 
@@ -59,7 +59,7 @@
         }
 
         var textVazio = '' //false
-        if(!textVazio){ //negação falsa é verdadeiro então o cod. será executado
+        if(!textVazio){ //negação de falsa é verdadeiro então o cod. será executado
             console.log('textoVazio')
         }
 
@@ -67,10 +67,10 @@
 
         condição composta
         -----------------
-        (caso a 1ª condição seja falsa a segunda será executada)
+        (caso a 1ª condição seja falsa a segunda será executada se ela for verdadeira)
         */
             
-        var textVazio = '' //str vazia é false
+        var textVazio = ' ' //str vazia é false
         if(textVazio){  // como é um condição falsa ñ sera impresso o oi.
             console.log('oi')
         }else{
@@ -95,7 +95,8 @@
             OPERADOR TERNÁRIO 
             -----------------
          forma curta de representar if else
-
+         representação: 
+         teste logico ? resposta verdadeira : resposta falsa
         */
 
         console.log(true ? 'programador' : 'Designer') //se a condição for verdadeira executa a primeira opção se for falsa executa a segunda opção.
@@ -127,6 +128,25 @@
                 console.log('cor inválida')
                 break // ñ é obrigado usar 
         } 
+
+//========================= multicases: ====================================//
+
+        var cor = 'verde'
+
+        switch(cor) {
+            case 'vermelho':
+            case 'laranja':
+            case 'amarelo':
+                console.log('cor quente')
+                break
+
+            case 'verde':
+            case 'azul':
+            case 'roxo': 
+                console.log('cor fria')
+                break
+
+        }   
 
         /* 
         em JS:

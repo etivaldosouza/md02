@@ -20,63 +20,85 @@
         console.log(nome.indexOf('al')) //procura trecho de texto dentro de um texto e retorna a sua posição. quando ñ acha retorna -1
 
         console.log(nome.replace('Souza','coelho')) // troca um termo por outro
-
+        console.log(nome.slice(2,8)) // retorna fatia de um texto(passo posição inicial e posição final)
         var canalYoutube = '         Programador Abordo       '
         console.log(canalYoutube)
         console.log(canalYoutube.trim()) //Retira os espaços antes e depois do termo
         
-        /*
-
+        
+        
+//===============================================================================================//
+      /*
+        
         operadores matemáticos
 
-        */
+      */
 
-        console.log(10+5*3)
+        console.log(10+5*3) // primeiro a multilplicação
         console.log(25-20)
         console.log(5*2)
         console.log(100/2)
-        console.log(4**2)
+        console.log(4**2) // potenciação ou exposnenciação
         var a = 10
         var b = 8
         console.log(a+b)
-        console.log(10 % 2 ) // resto da divisão de 10 por 2
-        console.log(10 % 4 )
+        console.log(10 % 2 ) //operador módulo: resto da divisão de 10 por 2
+        console.log(10 % 4 ) // resto da divisçao de 10 por 4
         console.log(10 % 3 )
-        
-        //incremento
+
+//=========================================================================================//   
+        //incremento:
+
+         // ++a: incrementa antes
+         // a++: incrementa depois
+
         var a = 4 
         console.log(++a)//já printa o valor incrementado
         
-        console.log(a++) //primeiro printa o valor anterior na tela e depois faz o incremento
+        var a = 2
+        console.log(a++) //printa o valor atual na tela e para fazer o incremento tem que dá outro print
         console.log(a)
 
+//=============================================================================================// 
+      // Decremento:
 
-        //operadores lógicos e Relacionais)
+         // --a : decrementa antes
+         // a--: decrementa depois
 
-        var a = true
-        console.log(a)
-        var b = false
-        console.log(b)
+         var a = 6
+         console.log(--a)
+
+         var b = 10
+         console.log(b--)
+         console.log(b)
+
+//==============================================================================================//
+
+        //operadores Relacionais) // comparação
 
         console.log('3 < 5',3 < 5 )
-        console.log(10 != 10)
+        console.log(10 != 10) // ! =
+
+
         var nome1 = 'etivaldo'
         var nome2 = 'souza'
         console.log('nome1 == nome2',nome1 == nome2)
         console.log('nome1 != nome 2',nome1 != nome2)
         
-        console.log('4' === 4) // analisa tipo e valor (o 1º 4 é str e o outro é do tipo int)
-        console.log('4' === '4') // os dois tem o mesmo valor e são str
-        console.log('4' == 4) //analisa apenas o valor
 
-        // operadores lógico ( true,false, negaçao(!))
+        console.log('4' === 4) // identico e igual: analisa tipo e valor (o 1º 4 é str e o outro é do tipo number)
+        console.log('4' === '4') // identico e igual: os dois tem o mesmo valor e são str
+        console.log('4' == 4)  //igualdade: analisa apenas o valor
+        
+        
+        // operadores lógico boolean ( true,false, negaçao(!))
          
        var a = true
        var b = false
        console.log(a)
        console.log(b)
        
-       //negacao(!)
+       //negacao(!) // oposto
 
        console.log(!a)
        console.log(!b)
@@ -87,7 +109,7 @@
 
        valores que por padrão são considerados false:
        ----------------------------------------------
-         null , underfined, ' '(string vazia), false, 0.
+         null , undefined, ' '(string vazia), false, 0.
 
        */
 
@@ -105,8 +127,8 @@
 
      console.log(!20)
      console.log(!!20)
-
-     
+     console.log(!'texto')
+     console.log(!!'texto')
 
        /*
        
@@ -126,32 +148,44 @@
      console.log('passou' && 0)
      console.log('passou' &&  null && 0)//(V,F,F = F)
      console.log('false' && 100 && '' && 'teste' && null) //(V,V = V) (V,F = F) // resultado é uma string vazia
-     console.log(10 > 5 && 7 < 10) //( V,V = V)
+     
+
+     // casos abaixo retorna true ou false apenas, pois se trata de uma afirmação,expressão boleana.
+
+     console.log(10 > 5 && 7 < 10) //( V,V = V) 
+     
      console.log(10 > 5 && 10 > 11) //(V,F = F)
       
+   //===================================================================//
+
      /*
 
       OPERADOR || (ou) OPERADOR DE DISJUNÇÃO
-      -----------------
-      - so é falso se todos forem falsos e retorna a ultima que é falsa
+      ---------------------------------------
 
-      - se um deles forem verdadeiro o resultado retorno o 1º que for verdadeiro e para.
+      - so é falso se todos forem falsos e retorna a última que é falsa
+
+      - se um deles forem verdadeiro o resultado retorna o 1º que for verdadeiro e para.
+
       */
+
       console.log(null || 'programador a bordo')
       console.log(null || 'programador a bordo'|| 26)
       console.log(null || '' || 26) //(F,V,F= V)
       console.log('programador a bordo' || 'teste') 
-      console.log(10 > 5 || 10 < 11)
+      console.log(10 > 5 || 10 < 11) // por se tratar de uma afirmação, ou seja, expressão booleana, retorna true ou false 
       console.log(10 > 30 || 10 > 11)
       console.log(null || false || 0)
       
+      
       console.log('programador' && 2050 || ' ' && 26) 
-      // ( SE TIVER UM && OU UMA SEQUENCIA DE &&, E DEPOIS DELE TIVER UM || SENDO O && COMPROVADO COMO VERDADEIRO, COMO NO CASO A CIMA, Ñ PRECISA PROSSEGUIR COM A ANALISE DO || OQ ACONTECE NO EXEMPLO: V,V = retorna o ultimo verdadeiro(2050) e encerra o programa )
+      // ( SE TIVER UM && OU UMA SEQUENCIA DE &&, E ''DEPOIS DELE'' TIVER UM || SENDO O && COMPROVADO COMO VERDADEIRO, COMO NO CASO A CIMA, Ñ PRECISA PROSSEGUIR COM A ANALISE DO || OQ ACONTECE NO EXEMPLO: V,V = retorna o ultimo verdadeiro(2050) e encerra o programa )
 
       console.log('programador' && 2050 && 'a bordo' || 0) // V,V = RETORNA O ULTIMO( 2050) 2050 && 'a bordo' => V,V = retorna o ultimo Verdadeito('a bordo' )
       // obs: o && prevalece sobre o ||
       
-      console.log(null || !'' && 'programador') 
+      console.log(null || !'' && 'programador') // analiso logo o && pois ele prevalece; então (!" " && 'programador') v v = retorna ultimo verdadeiro que é programador
+
       console.log(0 || null && 'bola') // obs: o && prevalece sobre o || (null && 'bola') no && sendo um dos elementos F o resultado retorna o primeiro que é F, no caso o null.
    </script>
 </body>
