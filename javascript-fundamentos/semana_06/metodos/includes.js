@@ -19,7 +19,7 @@ if(usuario.include('brasileiro')){
 
 */
 
-//=====================================================//
+//=============================================================//
 
 // procura se existe um item do array e retorna true ou false
 

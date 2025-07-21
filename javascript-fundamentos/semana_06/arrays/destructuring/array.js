@@ -1,38 +1,7 @@
-/* metodo .concat()
---------------------
-quando quero juntar dois arrays
+// forma de pegar os arrays e colocar dentro de uma variavel:
 
-*/
+// forma antiga:
 
-var arr1 = [3,2,1]
-var arr2 = ['programador', 'a','bordo']
-var resultado = arr1.concat(arr2)
-console.log(resultado)
-
-
-var n1 = [3,5,9]
-var n2 = [10,11,12]
-var res = n1.concat(n2)
-console.log(res)
-var n3 = res.push('100') // ñ é obrigado criar a variavel.
-console.log(res)
-
-
-
-var arr1 = [3,2,1]
-var arr2 = ['programador','a','bordo']
-
-console.log([arr1,arr2])
-console.log([...arr1,...arr2]) //usando o spread(...)
-// o spread espalha os arrays em um unico array
-
-/* 
-
-forma de pegar os arrays e colocar dentro de uma variavel:
-
-forma antiga:
-
-*/
 var usuario = ['ayrton',26,'programador abordo',2019,'Brasileiro']
 var nome = usuario[0] // usuario na posição 0
 var idade = usuario[1] // usuário na posição 1
@@ -57,6 +26,7 @@ console.log(nome,idade,nacionalidade)
 // extraia os valores a,b e do array abaixo:
 
 // forma antiga
+
 const numeros = [10, 20, 30];
 var a = numeros[0]
 var b = numeros[1]
@@ -87,3 +57,70 @@ console.log(nome,idade)
 
 var {nome,idade} = pessoa
 console.log(nome,idade)
+
+// ex03: Extraia o valor de cidade e renomeie para local:
+
+const endereco = {
+  rua: "Rua A",
+  cidade: "São Paulo"
+};
+
+const {cidade:local} = endereco // o mesmo p/ array
+console.log(local) 
+
+// ex04: extraia bairro do objeto:
+
+const pessoa = {
+  nome: "João",
+  endereco: {
+    rua: "B",
+    bairro: "Centro"
+  }
+};
+
+var {endereco:{bairro}} = pessoa
+console.log(bairro)
+
+// ex05: Use valor padrão idioma = "português" caso ele não exista:
+
+const config = {
+  tema: "escuro"
+};
+
+const {tema,idioma = 'português'} = config
+console.log(tema,idioma)
+
+// ex06: Extraia apenas o primeiro e o terceiro elemento do array:
+
+const cores = ["vermelho", "verde", "azul"];
+
+const [a1, ,a3] = cores
+console.log(a1,a3)
+
+
+//====== destruturing aninhado: =============//
+    
+// ex07 extraia os valores 2 e 4:
+
+const dados = [1, [2, 3], 4];
+const [,[a2],a4] = dados
+console.log(a2,a4)
+
+// ex08: extraindo os valores 3 e 4:
+
+const dados = [1, [2, 3], 4];
+
+const [,[,a1],a2] = dados
+console.log(a1,a2)
+
+// ex09:Troque os valores das variáveis x e y:
+
+
+let x = 1;
+let y = 2;
+
+[x,y] = [y,x]
+console.log(x)
+console.log(y)
+
+console.log(x,y) // pode imprimir logo os dois

@@ -69,6 +69,7 @@ switch('amarelo'){ // posso por a var ou o valor direto
 var hoje = new Date()
 var atividade = hoje.getDay()
 
+
 switch(atividade) {
     case 0:
         console.log('descanço')
@@ -91,5 +92,33 @@ switch(atividade) {
     case 6:
         console.log('perna e ombro II')
         break
+    default:
+        console.log('dia inválido')
+        break
+}
 
+// segunda maneira:
+
+
+var hj = new Date()
+var atividade = hj.getDay()
+
+switch(atividade) {
+    case 0:
+        console.log('repouso')
+        break
+    case 1:
+    case 4:
+        console.log('biceps e costas')
+        break
+    case 2:
+    case 5:
+        console.log('peito e triceps')
+        break
+    case 3:
+    case 6:
+        console.log('perna e ombro')
+        break
+    default:
+        console.log('dia inválido')
 }
