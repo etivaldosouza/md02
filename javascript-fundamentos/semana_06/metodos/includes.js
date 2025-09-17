@@ -2,7 +2,7 @@
 /* metodo includes() 
 ---------------------
 
-verificar se no array existe determinado elemento e retorna true ou false. a diferença p/ o .indexOf() é que o indexOf() retorna a posição e quando ñ encontra retrona -1
+verificar se no array existe determinado elemento e retorna true ou false. a diferença p/ o .indexOf() é que o indexOf() retorna a posição do elemento no array e quando ñ encontra retrona -1.
 
 */
 
@@ -19,6 +19,14 @@ if(usuario.include('brasileiro')){
 
 */
 
+let nomes = ['Etivaldo', 'Ana', 'Bia','Maria']
+
+if(nomes.includes('Etivaldo')){
+    console.log(`olá Etivaldo!`)
+}else{
+    console.log(`nome não consta na lista`)
+}
+
 //=============================================================//
 
 // procura se existe um item do array e retorna true ou false
@@ -29,8 +37,24 @@ console.log(numeros.includes(10))
 
 //========================================================
 
+
 const pessoas = ['adamastor','joana','mauricio','lalau']
 
 console.log(pessoas.includes('neto'))
 
 
+//==========================================================
+
+
+
+// utilizando o indexOf()
+
+// procura se tem o elemento no array, se tiver retorna a posição do elemento no array caso contrario retorna -1
+
+
+
+const numeros = [1,5,6,8,20,45,50]
+
+console.log(numeros.indexOf(10))
+
+console.log(numeros.indexOf(20))

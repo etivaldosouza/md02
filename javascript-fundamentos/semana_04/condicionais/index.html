@@ -54,12 +54,12 @@
         }
 
         var textVazio = '' //false
-        if(textVazio){ //condição falsa, o cod.ñ será executado
+        if(textVazio){ //condição falsa, o codigo ñ será executado
             console.log('textoVazio')
         }
 
         var textVazio = '' //false
-        if(!textVazio){ //negação de falsa é verdadeiro então o cod. será executado
+        if(!textVazio){ //negação de falsa é verdadeiro então o codigo será executado
             console.log('textoVazio')
         }
 
@@ -92,15 +92,19 @@
         }    
 
         /* 
-            OPERADOR TERNÁRIO 
-            -----------------
-         forma curta de representar if else
-         representação: 
-         teste logico ? resposta verdadeira : resposta falsa
+                OPERADOR TERNÁRIO 
+                -----------------
+
+            forma curta de representar if else
+
+            representação: 
+
+            teste logico ? resposta verdadeira : resposta falsa
+
         */
 
         console.log(true ? 'programador' : 'Designer') //se a condição for verdadeira executa a primeira opção se for falsa executa a segunda opção.
-        console.log(false ? 'progrmador' : 'Designer')
+        console.log(false ? 'progrmador' : 'Designer') // como o teste lógico é falso então imprime a segunda opção
 
         var idade = 16
         console.log(idade >= 18 ? 'maior de idade' : 'menor de idade')
@@ -145,7 +149,9 @@
             case 'roxo': 
                 console.log('cor fria')
                 break
-
+        default:
+            console.log('cor inválida')
+            break // esse break ñ é obrigatorio
         }   
 
         /* 
